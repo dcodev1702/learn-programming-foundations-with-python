@@ -1,4 +1,4 @@
-# Learn Programing Foundations with Python
+# Learn Programming Foundations with Python
 
 This workspace contains a beginner-focused Python learning plan, weekly chapter notes, teaching support materials, and reference implementations for the Personal Budget Tracker project.
 
