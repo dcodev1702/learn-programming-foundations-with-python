@@ -48,3 +48,8 @@ python3 budget_tracker_final.py
 - Weeks 11-12: add persistence, polish, and final project structure
 
 The goal is not to memorize every line. The goal is to understand why each version is structured the way it is.
+
+## Contributors
+
+- [dcodev1702](https://github.com/dcodev1702): project author and maintainer
+- GitHub Copilot: AI-assisted drafting, editing, and repository setup support
