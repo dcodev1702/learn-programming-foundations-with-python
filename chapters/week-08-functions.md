@@ -66,6 +66,10 @@ def square(number):
 
 This function takes in one value and returns one value.
 
+![Anatomy of a function definition and its call site: def, name, required and default parameters, docstring, return, and arguments mapped onto parameters](../diagrams/week-08-function-anatomy.svg)
+
+*Parameters are the empty slots you write in the `def` line. Arguments are the real values you drop into those slots when you call it.*
+
 ## Scope: Local vs. Global
 
 Variables created inside a function are usually local to that function.
@@ -108,6 +112,12 @@ Output:
 - inside the function, `number` becomes `11`
 - outside the function, `score` is still `10`
 
+Here is the whole thing, one moment at a time.
+
+![Four time slices of add_one(score): before the call, the new frame with number bound to the same object, a new object created inside the function, and the frame discarded on return leaving score unchanged](../diagrams/week-08-call-stack-and-frames.svg)
+
+*This is the diagram to come back to. Calling a function builds a brand new frame, binds the parameter to the argument's object, and then destroys the whole frame — parameter, locals and all — the moment the function returns. Because rebinding a name inside that frame cannot reach the caller, an `int` behaves exactly as if it had been copied.*
+
 Example with a mutable value:
 
 ```python
@@ -122,6 +132,10 @@ print(shopping)
 After the function call, `shopping` has changed.
 
 This is why mutability matters.
+
+![Rebinding an int inside a function leaves the caller untouched, while mutating a list inside a function is visible to the caller](../diagrams/week-08-mutable-vs-immutable-arguments.svg)
+
+*One sentence covers every case: assigning to a bare name (`name = ...`) only affects the function; changing the object itself (`items.append(...)`, `d[key] = ...`, `obj.attr = ...`) affects everyone holding a reference to it.*
 
 ## Examples
 
@@ -196,7 +210,7 @@ def add_expense(transactions, categories):
     """Prompt the user for an expense transaction."""
     desc = input("Description: ")
     amount = float(input("Amount: $"))
-    category = input("Category: ").title() or "Uncategorized"
+    category = input("Category: ").strip().title() or "Uncategorized"
     transactions.append((desc, -amount, category))
     categories[category] = categories.get(category, 0) + amount
 

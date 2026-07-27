@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 680" width="1220" height="680" role="img" aria-label="Mutable List, Immutable Tuple">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1220" height="680" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1176" height="636" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="610" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 06 · LISTS &amp; TUPLES</text>
+<text x="610" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Mutable List, Immutable Tuple</text>
+<text x="610" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">append() changes the object you already have — a tuple refuses and raises instead</text>
+<text x="62" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="92" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">LIST · MUTABLE</text>
+<rect x="58" y="150" width="546" height="400" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="84" y="186" width="494" height="88" rx="10" fill="#080e1c" stroke="#1f4030" stroke-width="1.2"/>
+<text x="98" y="212" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">items </tspan><tspan fill="#8fa3bf">= [</tspan><tspan fill="#fbbf24">1</tspan><tspan fill="#8fa3bf">, </tspan><tspan fill="#fbbf24">2</tspan><tspan fill="#8fa3bf">, </tspan><tspan fill="#fbbf24">3</tspan><tspan fill="#8fa3bf">]</tspan></text>
+<text x="98" y="232" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">items.</tspan><tspan fill="#60a5fa">append</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#fbbf24">4</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="98" y="252" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">print</tspan><tspan fill="#8fa3bf">(items)</tspan><tspan fill="#5b6b86">   # [1, 2, 3, 4]</tspan></text>
+<text x="96" y="308" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">BEFORE</text>
+<rect x="96" y="322" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="124" y="354" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">1</text>
+<rect x="162" y="322" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="190" y="354" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">2</text>
+<rect x="228" y="322" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="256" y="354" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">3</text>
+<text x="430" y="354" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">id: 0x7f2a...c40</text>
+<text x="96" y="414" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">AFTER</text>
+<rect x="96" y="428" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="124" y="460" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">1</text>
+<rect x="162" y="428" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="190" y="460" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">2</text>
+<rect x="228" y="428" width="56" height="50" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<text x="256" y="460" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">3</text>
+<rect x="294" y="428" width="56" height="50" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1.7"/>
+<text x="322" y="460" fill="#f8fafc" font-size="18" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">4</text>
+<text x="430" y="460" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">id: 0x7f2a...c40</text>
+<text x="330" y="512" fill="#86efac" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">same object, new contents — the id never changed</text>
+<text x="662" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="692" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">TUPLE · IMMUTABLE</text>
+<rect x="658" y="150" width="504" height="400" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="684" y="186" width="452" height="108" rx="10" fill="#080e1c" stroke="#5b1b1b" stroke-width="1.2"/>
+<text x="698" y="212" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">point </tspan><tspan fill="#8fa3bf">= (</tspan><tspan fill="#fbbf24">40.7</tspan><tspan fill="#8fa3bf">, </tspan><tspan fill="#fbbf24">-74.0</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="698" y="232" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">point[</tspan><tspan fill="#fbbf24">0</tspan><tspan fill="#8fa3bf">] = </tspan><tspan fill="#fbbf24">41.0</tspan></text>
+<text x="698" y="252" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#fca5a5">TypeError: 'tuple' object does</tspan></text>
+<text x="698" y="272" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#fca5a5">not support item assignment</tspan></text>
+<rect x="684" y="326" width="452" height="96" rx="12" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="684" y="326" width="452" height="96" rx="12" fill="#1d0f33" stroke="#a855f7" stroke-width="2"/>
+<text x="910" y="356" fill="#f8fafc" font-size="22" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">( 40.7 , -74.0 )</text>
+<text x="910" y="374" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">fixed shape, fixed contents, locked at creation</text>
+<rect x="684" y="442" width="452" height="70" rx="8" fill="#05262f" stroke="#22d3ee" stroke-width="1" opacity="0.85"/>
+<rect x="684" y="442" width="4" height="70" rx="2" fill="#22d3ee"/>
+<text x="700" y="462" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">WHY THE COURSE USES TUPLES</text>
+<text x="700" y="480" fill="#a5f3fc" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Each transaction is (description, amount, category) — always three</text>
+<text x="700" y="496" fill="#a5f3fc" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">fields in the same order. A tuple documents that shape.</text>
+<rect x="58" y="580" width="1104" height="54" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="580" width="4" height="54" rx="2" fill="#f59e0b"/>
+<text x="74" y="600" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">THE PAYOFF COMES IN WEEK 8</text>
+<text x="74" y="618" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Because a list is mutable, passing it into a function lets that function change your original data. Because a tuple is not, it cannot be changed by accident.</text>
+</svg>

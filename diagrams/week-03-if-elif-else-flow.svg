@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 780" width="1220" height="780" role="img" aria-label="One Chain, Exactly One Branch">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1220" height="780" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1176" height="736" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="610" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 03 · CONDITIONALS</text>
+<text x="610" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">One Chain, Exactly One Branch</text>
+<text x="610" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">if / elif / else is tested top to bottom and stops at the first True — traced with temperature = 72</text>
+<rect x="58" y="146" width="402" height="228" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="72" y="166" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">THE CODE</text>
+<text x="72" y="196.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">temperature</tspan><tspan fill="#8fa3bf"> = </tspan><tspan fill="#fbbf24">72</tspan></text>
+<text x="72" y="240.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">if</tspan><tspan fill="#e2e8f0"> temperature </tspan><tspan fill="#8fa3bf">&gt; </tspan><tspan fill="#fbbf24">85</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="72" y="262.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">    print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"It's hot outside!"</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="72" y="284.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">elif</tspan><tspan fill="#e2e8f0"> temperature </tspan><tspan fill="#8fa3bf">&gt; </tspan><tspan fill="#fbbf24">65</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="72" y="306.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">    print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"Nice weather today!"</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="72" y="328.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">else</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="72" y="350.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">    print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"Grab a jacket."</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<rect x="58" y="412" width="402" height="86" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="412" width="4" height="86" rx="2" fill="#f59e0b"/>
+<text x="74" y="432" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">THE COLON AND THE INDENT</text>
+<text x="74" y="450" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">The colon opens the block. The four-space indent is what</text>
+<text x="74" y="466" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">actually belongs to the branch — Python uses whitespace,</text>
+<text x="74" y="482" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">not braces.</text>
+<rect x="58" y="514" width="402" height="70" rx="8" fill="#2e0e0e" stroke="#ef4444" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="514" width="4" height="70" rx="2" fill="#ef4444"/>
+<text x="74" y="534" fill="#fca5a5" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">= VS ==</text>
+<text x="74" y="552" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">= assigns a value. == asks a question. if temperature = 85</text>
+<text x="74" y="568" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">is a SyntaxError, not a comparison.</text>
+<text x="524" y="136" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="554" y="136" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">EVALUATION ORDER</text>
+<rect x="520" y="146" width="640" height="396" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="544" y="182" width="592" height="100" rx="11" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.7"/>
+<circle cx="570" cy="208" r="12" fill="#0b1220" stroke="#ef4444" stroke-width="1.5"/>
+<text x="570" y="212" fill="#fca5a5" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">01</text>
+<text x="594" y="213" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" xml:space="preserve">if</text>
+<text x="648" y="213" fill="#fecaca" font-size="13" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">temperature &gt; 85</text>
+<text x="1088" y="213" fill="#fecaca" font-size="14" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">False</text>
+<text x="1088" y="232" fill="#fca5a5" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">72 &gt; 85</text>
+<line x1="560" y1="244" x2="1096" y2="244" stroke="#ef4444" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+<text x="594" y="266" fill="#fca5a5" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">print("It's hot outside!")</text>
+<rect x="1032" y="252" width="64" height="22" rx="11" fill="#101827" stroke="#64748b" stroke-width="1.2"/>
+<text x="1064" y="267" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">skipped</text>
+<text x="570" y="298" fill="#64748b" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">|</text>
+<rect x="544" y="304" width="592" height="100" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<circle cx="570" cy="330" r="12" fill="#0b1220" stroke="#22c55e" stroke-width="1.5"/>
+<text x="570" y="334" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">02</text>
+<text x="594" y="335" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" xml:space="preserve">elif</text>
+<text x="648" y="335" fill="#bbf7d0" font-size="13" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">temperature &gt; 65</text>
+<text x="1088" y="335" fill="#bbf7d0" font-size="14" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">True</text>
+<text x="1088" y="354" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">72 &gt; 65</text>
+<line x1="560" y1="366" x2="1096" y2="366" stroke="#22c55e" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+<text x="594" y="388" fill="#f8fafc" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">print("Nice weather today!")</text>
+<rect x="1032" y="374" width="64" height="22" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.2"/>
+<text x="1064" y="389" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">runs</text>
+<text x="570" y="420" fill="#64748b" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">|</text>
+<rect x="544" y="426" width="592" height="100" rx="11" fill="#101827" stroke="#64748b" stroke-width="1.7"/>
+<circle cx="570" cy="452" r="12" fill="#0b1220" stroke="#64748b" stroke-width="1.5"/>
+<text x="570" y="456" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">03</text>
+<text x="594" y="457" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" xml:space="preserve">else</text>
+<text x="648" y="457" fill="#e2e8f0" font-size="13" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">everything else</text>
+<text x="1088" y="457" fill="#e2e8f0" font-size="14" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">—</text>
+<text x="1088" y="476" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">never reached</text>
+<line x1="560" y1="488" x2="1096" y2="488" stroke="#64748b" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+<text x="594" y="510" fill="#94a3b8" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">print("Grab a jacket.")</text>
+<rect x="1032" y="496" width="64" height="22" rx="11" fill="#101827" stroke="#64748b" stroke-width="1.2"/>
+<text x="1064" y="511" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">skipped</text>
+<path d="M1126,304 L1162,304 Q1174,304 1174,316 L1174,584 Q1174,596 1162,596 L820,596" fill="none" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#flowGreen)"/>
+<rect x="476" y="566" width="340" height="60" rx="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="476" y="566" width="340" height="60" rx="12" fill="#07301c" stroke="#22c55e" stroke-width="2"/>
+<text x="646" y="596" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Nice weather today!</text>
+<text x="646" y="614" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">the only line that printed</text>
+<text x="840" y="640" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Once a branch runs, the rest of the chain is never even evaluated.</text>
+<rect x="361.74" y="700" width="210.32" height="26" rx="13" fill="#0c1424" stroke="#22c55e" stroke-width="1.2" opacity="0.95"/>
+<circle cx="377.74" cy="713" r="4.5" fill="#22c55e"/>
+<text x="388.74" y="717" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">condition True · branch runs</text>
+<rect x="582.06" y="700" width="133.1" height="26" rx="13" fill="#0c1424" stroke="#ef4444" stroke-width="1.2" opacity="0.95"/>
+<circle cx="598.06" cy="713" r="4.5" fill="#ef4444"/>
+<text x="609.06" y="717" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">condition False</text>
+<rect x="725.16" y="700" width="133.1" height="26" rx="13" fill="#0c1424" stroke="#64748b" stroke-width="1.2" opacity="0.95"/>
+<circle cx="741.16" cy="713" r="4.5" fill="#64748b"/>
+<text x="752.16" y="717" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">never evaluated</text>
+</svg>

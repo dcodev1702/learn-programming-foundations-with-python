@@ -11,6 +11,8 @@
 
 Throughout this plan, you'll progressively build a **Personal Budget Tracker** — a command-line application that lets you add income and expenses, categorize transactions, set budgets, view summaries, and save/load your data. Each week adds new functionality using the concepts you just learned. By the end, you'll have a complete, working app you built yourself.
 
+![The 12-week build path: month 1 foundations, month 2 building blocks, month 3 OOP and shipping, all feeding into the Personal Budget Tracker](diagrams/course-roadmap.svg)
+
 ## Recommended Before You Start
 
 - **Study in short, regular sessions.** Aim for 3-4 sessions per week instead of one long cram session.

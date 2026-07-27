@@ -27,6 +27,10 @@ That is why classes often hold both attributes and methods.
 
 Instead of doing balance math everywhere, you can call methods like `deposit()` and `withdraw()`.
 
+![A BudgetTracker drawn as a boundary: state inside, methods as the only way in, an allowed call going through a method and a discouraged direct poke at the internals](../diagrams/week-10-encapsulation-boundary.svg)
+
+*Outside code asks the object to do something. It does not reach in and rearrange the furniture.*
+
 ## Special Methods
 
 Special methods such as `__str__` let you control how an object is shown when printed.
@@ -53,6 +57,10 @@ transactions.append(Transaction("Groceries", -45, "Food"))
 ```
 
 This gives you a structured way to manage many related records.
+
+![Three Transaction objects held in a list, summarised by one generator expression into income, expenses, and balance, with __str__ rendering the tracker as text](../diagrams/week-10-objects-in-a-list.svg)
+
+*Week 6 gave you the list. Week 9 gave you the object. Put them together and a whole summary is one line of code.*
 
 ## Examples
 

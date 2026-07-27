@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="What self Actually Is">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1280" height="720" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1236" height="676" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="640" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 09 · INTRO TO OOP</text>
+<text x="640" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">What self Actually Is</text>
+<text x="640" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Dog("Buddy", "Golden Retriever", 3) is four steps — and self is just the object being built</text>
+<text x="54" y="146" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="84" y="146" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">YOU CALL THE CLASS</text>
+<rect x="50" y="156" width="276" height="268" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="70" y="196" width="236" height="56" rx="10" fill="#05262f" stroke="#22d3ee" stroke-width="1.8"/>
+<text x="188" y="230" fill="#f8fafc" font-size="13.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">Dog("Buddy", ...)</text>
+<text x="188" y="284" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Python sees a class,</text>
+<text x="188" y="303" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">not a plain function.</text>
+<line x1="328" y1="290" x2="342" y2="290" stroke="#f43f5e" stroke-width="2.3" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="352" y="146" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="382" y="146" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">AN EMPTY OBJECT IS MADE</text>
+<rect x="348" y="156" width="276" height="268" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="368" y="196" width="236" height="56" rx="10" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1.8"/>
+<text x="486" y="230" fill="#f8fafc" font-size="13.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">&lt;Dog object&gt;</text>
+<text x="486" y="284" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">No attributes yet.</text>
+<text x="486" y="303" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Just an empty instance.</text>
+<line x1="626" y1="290" x2="640" y2="290" stroke="#f43f5e" stroke-width="2.3" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="650" y="146" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">03</text>
+<text x="680" y="146" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">__INIT__ RUNS</text>
+<rect x="646" y="156" width="276" height="268" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="666" y="196" width="236" height="56" rx="10" fill="#2b1c05" stroke="#f59e0b" stroke-width="1.8"/>
+<text x="784" y="230" fill="#f8fafc" font-size="13.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">__init__(self, ...)</text>
+<text x="784" y="284" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">The new object is passed</text>
+<text x="784" y="303" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">in as the first argument.</text>
+<line x1="924" y1="290" x2="938" y2="290" stroke="#f43f5e" stroke-width="2.3" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="948" y="146" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">04</text>
+<text x="978" y="146" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE OBJECT IS HANDED BACK</text>
+<rect x="944" y="156" width="276" height="268" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="964" y="196" width="236" height="56" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.8"/>
+<text x="1082" y="230" fill="#f8fafc" font-size="13.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">my_dog = &lt;Dog&gt;</text>
+<text x="1082" y="284" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">self.name is now "Buddy".</text>
+<text x="1082" y="303" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">The name my_dog is bound.</text>
+<rect x="666" y="332" width="236" height="70" rx="9" fill="#080e1c" stroke="#f59e0b" stroke-width="1.3"/>
+<text x="680" y="356" fill="#fcd34d" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.name  = name</text>
+<text x="680" y="376" fill="#fcd34d" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.breed = breed</text>
+<text x="680" y="396" fill="#fcd34d" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.age   = age</text>
+<line x1="50" y1="468" x2="1230" y2="468" stroke="#1b2942" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="50" y="460" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">CALLING A METHOD IS THE SAME TRICK</text>
+<rect x="50" y="496" width="568" height="116" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="64" y="522.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">my_dog.</tspan><tspan fill="#60a5fa">bark</tspan><tspan fill="#8fa3bf">()</tspan><tspan fill="#5b6b86">          # what you write</tspan></text>
+<text x="64" y="544.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#c4b5fd">Dog.</tspan><tspan fill="#60a5fa">bark</tspan><tspan fill="#8fa3bf">(my_dog)</tspan><tspan fill="#5b6b86">       # what Python does</tspan></text>
+<text x="64" y="588.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#7dd3fc">Buddy says: Woof!</tspan></text>
+<rect x="650" y="496" width="580" height="70" rx="8" fill="#1d0f33" stroke="#a855f7" stroke-width="1" opacity="0.85"/>
+<rect x="650" y="496" width="4" height="70" rx="2" fill="#a855f7"/>
+<text x="666" y="516" fill="#d8b4fe" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">SO WHY WRITE SELF AT ALL?</text>
+<text x="666" y="534" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Because the object has to arrive somewhere. Python passes it as the first argument to</text>
+<text x="666" y="550" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">every method; self is just the conventional name for that slot.</text>
+<rect x="650" y="600" width="580" height="70" rx="8" fill="#2e0e0e" stroke="#ef4444" stroke-width="1" opacity="0.85"/>
+<rect x="650" y="600" width="4" height="70" rx="2" fill="#ef4444"/>
+<text x="666" y="620" fill="#fca5a5" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">THE CLASSIC BEGINNER ERROR</text>
+<text x="666" y="638" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Leaving self out of a method signature gives 'takes 0 positional arguments but 1 was</text>
+<text x="666" y="654" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">given' — the object was still passed in.</text>
+</svg>

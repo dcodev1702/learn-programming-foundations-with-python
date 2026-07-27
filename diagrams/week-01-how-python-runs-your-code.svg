@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 690" width="1240" height="690" role="img" aria-label="How Python Runs Your Code">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1240" height="690" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1196" height="646" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="620" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 01 · GETTING STARTED</text>
+<text x="620" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">How Python Runs Your Code</text>
+<text x="620" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">One file, one statement at a time, always top to bottom — the interpreter never skips ahead</text>
+<text x="62" y="138" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="92" y="138" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">YOUR FILE ON DISK</text>
+<rect x="58" y="148" width="348" height="300" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="78" y="182" width="308" height="162" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="92" y="202" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">SOURCE · PLAIN TEXT</text>
+<text x="92" y="232.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#5b6b86"># budget_tracker.py</tspan></text>
+<text x="92" y="254.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"Budget Tracker"</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="92" y="276.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"=" </tspan><tspan fill="#8fa3bf">* </tspan><tspan fill="#fbbf24">40</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="92" y="298.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#5b6b86"># a note for humans</tspan></text>
+<text x="92" y="320.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"Ready."</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<text x="232" y="402" fill="#94a3b8" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">A script is just text. Nothing happens until you run it.</text>
+<text x="232" y="422" fill="#fbbf24" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">python budget_tracker.py</text>
+<text x="450" y="138" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="480" y="138" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE PYTHON 3.13 INTERPRETER</text>
+<rect x="446" y="148" width="348" height="300" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="472" y="190" width="266" height="50" rx="10" fill="#2b0f21" stroke="#ec4899" stroke-width="1.6"/>
+<circle cx="496" cy="215" r="13" fill="#0b1220" stroke="#ec4899" stroke-width="1.5"/>
+<text x="496" y="219" fill="#f0a8cd" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">01</text>
+<text x="520" y="220" fill="#f8fafc" font-size="13" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Read the next line</text>
+<line x1="536" y1="240" x2="536" y2="254" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="472" y="256" width="266" height="50" rx="10" fill="#2b1c05" stroke="#f59e0b" stroke-width="1.6"/>
+<circle cx="496" cy="281" r="13" fill="#0b1220" stroke="#f59e0b" stroke-width="1.5"/>
+<text x="496" y="285" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">02</text>
+<text x="520" y="286" fill="#f8fafc" font-size="13" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Check the syntax</text>
+<line x1="536" y1="306" x2="536" y2="320" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="472" y="322" width="266" height="50" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.6"/>
+<circle cx="496" cy="347" r="13" fill="#0b1220" stroke="#22c55e" stroke-width="1.5"/>
+<text x="496" y="351" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">03</text>
+<text x="520" y="352" fill="#f8fafc" font-size="13" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Execute the statement</text>
+<path d="M738,347 L747,347 Q756,347 756,338 L756,224 Q756,215 747,215 L738,215" fill="none" stroke="#475569" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5" marker-end="url(#flowSoft)"/>
+<text x="772" y="268" fill="#64748b" font-size="9.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">repeat</text>
+<text x="772" y="281" fill="#64748b" font-size="9.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">until</text>
+<text x="772" y="294" fill="#64748b" font-size="9.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">EOF</text>
+<text x="620" y="418" fill="#94a3b8" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Comments are read, recognised, and skipped.</text>
+<text x="838" y="138" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">03</text>
+<text x="868" y="138" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">YOUR TERMINAL</text>
+<rect x="834" y="148" width="348" height="300" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="854" y="182" width="308" height="162" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="868" y="202" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">STDOUT</text>
+<text x="868" y="231" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#94a3b8">$ python budget_tracker.py</tspan></text>
+<text x="868" y="253" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#7dd3fc">Budget Tracker</tspan></text>
+<text x="868" y="275" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#7dd3fc">========================================</tspan></text>
+<text x="868" y="297" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#7dd3fc">Ready.</tspan></text>
+<text x="868" y="319" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#94a3b8">$ _</tspan></text>
+<text x="1008" y="402" fill="#94a3b8" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">3 lines of output from 5 lines of file.</text>
+<text x="1008" y="422" fill="#fbbf24" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">the 2 comments produced nothing</text>
+<line x1="414" y1="298" x2="436" y2="298" stroke="#f43f5e" stroke-width="2.6" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="425" y="284" fill="#fbbf24" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" letter-spacing="0.5" xml:space="preserve">you run it</text>
+<line x1="802" y1="298" x2="824" y2="298" stroke="#f43f5e" stroke-width="2.6" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="813" y="284" fill="#fbbf24" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" letter-spacing="0.5" xml:space="preserve">it prints</text>
+<rect x="58" y="494" width="348" height="86" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="494" width="4" height="86" rx="2" fill="#f59e0b"/>
+<text x="74" y="514" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">SYNTAX ERROR</text>
+<text x="74" y="532" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">If any line cannot be understood, Python reports</text>
+<text x="74" y="548" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">the file and line number and stops before running</text>
+<text x="74" y="564" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">anything.</text>
+<rect x="446" y="494" width="348" height="86" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1" opacity="0.85"/>
+<rect x="446" y="494" width="4" height="86" rx="2" fill="#22c55e"/>
+<text x="462" y="514" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">PRINT() IS A TOOL</text>
+<text x="462" y="532" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">print() is your first debugger. Use it to see what</text>
+<text x="462" y="548" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">your program is actually doing, not just what you</text>
+<text x="462" y="564" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">hoped.</text>
+<rect x="834" y="494" width="348" height="70" rx="8" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1" opacity="0.85"/>
+<rect x="834" y="494" width="4" height="70" rx="2" fill="#3b82f6"/>
+<text x="850" y="514" fill="#93c5fd" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">ORDER MATTERS</text>
+<text x="850" y="532" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Line 2 cannot use something created on line 4.</text>
+<text x="850" y="548" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Execution order is the whole game in Week 1.</text>
+<rect x="418.99" y="622" width="67.76" height="26" rx="13" fill="#0c1424" stroke="#ec4899" stroke-width="1.2" opacity="0.95"/>
+<circle cx="434.99" cy="635" r="4.5" fill="#ec4899"/>
+<text x="445.99" y="639" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">read</text>
+<rect x="496.75" y="622" width="73.7" height="26" rx="13" fill="#0c1424" stroke="#f59e0b" stroke-width="1.2" opacity="0.95"/>
+<circle cx="512.75" cy="635" r="4.5" fill="#f59e0b"/>
+<text x="523.75" y="639" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">check</text>
+<rect x="580.45" y="622" width="85.58" height="26" rx="13" fill="#0c1424" stroke="#22c55e" stroke-width="1.2" opacity="0.95"/>
+<circle cx="596.45" cy="635" r="4.5" fill="#22c55e"/>
+<text x="607.45" y="639" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">execute</text>
+<rect x="676.03" y="622" width="144.98" height="26" rx="13" fill="#0c1424" stroke="#64748b" stroke-width="1.2" opacity="0.95"/>
+<circle cx="692.03" cy="635" r="4.5" fill="#64748b"/>
+<text x="703.03" y="639" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">skipped / comment</text>
+</svg>

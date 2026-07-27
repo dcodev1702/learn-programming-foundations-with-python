@@ -33,6 +33,10 @@ Python checks each `case` from top to bottom until it finds a match.
 
 The `_` case is the fallback. It is similar to `else` in an `if` statement.
 
+![Dispatching choice = "2" through match/case: the first case does not match, the second matches and runs, and the remaining cases are never tested](../diagrams/week-04-match-case-dispatch.svg)
+
+*The subject is evaluated once, then compared against each case from the top. The first match wins and the rest are never tested.*
+
 ## When to Use `match` vs. `if`
 
 Use `match` when:
@@ -46,6 +50,10 @@ Use `if` when:
 - conditions involve ranges like `score >= 90`
 - conditions combine logic with `and` or `or`
 - each branch checks something different
+
+![Side-by-side comparison of when to reach for match versus if/elif, with the same menu written both ways](../diagrams/week-04-match-vs-if.svg)
+
+*Neither one is better. `match` compares one value against fixed options; `if` asks a different question in every branch.*
 
 ## Examples
 

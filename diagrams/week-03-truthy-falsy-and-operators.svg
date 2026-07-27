@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 700" width="1220" height="700" role="img" aria-label="Truthy, Falsy, and the Logical Operators">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1220" height="700" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1176" height="656" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="610" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 03 · CONDITIONALS</text>
+<text x="610" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Truthy, Falsy, and the Logical Operators</text>
+<text x="610" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Python asks 'is this value truthy?' — not just 'is this value True?'</text>
+<text x="62" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="92" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">FALSY · BEHAVES LIKE FALSE</text>
+<rect x="58" y="150" width="560" height="262" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="84" y="190" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="140" y="225" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">0</text>
+<rect x="214" y="190" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="270" y="225" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">0.0</text>
+<rect x="344" y="190" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="400" y="225" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">""</text>
+<rect x="474" y="190" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="530" y="225" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">[]</text>
+<rect x="84" y="264" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="140" y="299" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">{}</text>
+<rect x="214" y="264" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="270" y="299" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">set()</text>
+<rect x="344" y="264" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="400" y="299" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">None</text>
+<rect x="474" y="264" width="112" height="56" rx="9" fill="#2e0e0e" stroke="#ef4444" stroke-width="1.5"/>
+<text x="530" y="299" fill="#fecaca" font-size="17" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">False</text>
+<text x="338" y="364" fill="#94a3b8" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">empty, zero, or nothing  -&gt;  the if block is skipped</text>
+<text x="666" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="696" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">TRUTHY · BEHAVES LIKE TRUE</text>
+<rect x="662" y="150" width="500" height="262" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="688" y="190" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="755" y="225" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">"Alex"</text>
+<rect x="840" y="190" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="907" y="225" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">1</text>
+<rect x="992" y="190" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="1059" y="225" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">-7</text>
+<rect x="688" y="264" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="755" y="299" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">3.14</text>
+<rect x="840" y="264" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="907" y="299" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">[0]</text>
+<rect x="992" y="264" width="134" height="56" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.5"/>
+<text x="1059" y="299" fill="#bbf7d0" font-size="16" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">{"a": 1}</text>
+<text x="912" y="364" fill="#94a3b8" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">anything with content  -&gt;  the if block runs</text>
+<line x1="58" y1="448" x2="1162" y2="448" stroke="#1b2942" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="58" y="440" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">COMBINING CONDITIONS</text>
+<rect x="58" y="476" width="346" height="160" rx="12" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="58" y="476" width="346" height="160" rx="12" fill="#0a1e3c" stroke="#3b82f6" stroke-width="2"/>
+<text x="231" y="506" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">and</text>
+<text x="231" y="524" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">BOTH sides must be true</text>
+<text x="74" y="576" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">True  and True   -&gt; True</text>
+<text x="74" y="592.5" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">True  and False  -&gt; False</text>
+<text x="74" y="609" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">False and True   -&gt; False</text>
+<rect x="428" y="476" width="346" height="160" rx="12" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="428" y="476" width="346" height="160" rx="12" fill="#1d0f33" stroke="#a855f7" stroke-width="2"/>
+<text x="601" y="506" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">or</text>
+<text x="601" y="524" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">AT LEAST ONE side must be true</text>
+<text x="444" y="576" fill="#d8b4fe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">True  or False  -&gt; True</text>
+<text x="444" y="592.5" fill="#d8b4fe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">False or True   -&gt; True</text>
+<text x="444" y="609" fill="#d8b4fe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">False or False  -&gt; False</text>
+<rect x="798" y="476" width="346" height="160" rx="12" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="798" y="476" width="346" height="160" rx="12" fill="#2b1c05" stroke="#f59e0b" stroke-width="2"/>
+<text x="971" y="506" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">not</text>
+<text x="971" y="524" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">flips the answer</text>
+<text x="814" y="576" fill="#fcd34d" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">not True   -&gt; False</text>
+<text x="814" y="592.5" fill="#fcd34d" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">not False  -&gt; True</text>
+<text x="814" y="609" fill="#fcd34d" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">not ""     -&gt; True</text>
+<text x="610" y="668" fill="#fbbf24" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">if name:  is the idiomatic way to ask "did the user actually type something?"</text>
+</svg>

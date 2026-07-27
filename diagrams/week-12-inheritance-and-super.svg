@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 790" width="1240" height="790" role="img" aria-label="Inheritance, super(), and Attribute Lookup">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1240" height="790" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1196" height="746" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="620" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 12 · INHERITANCE</text>
+<text x="620" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Inheritance, super(), and Attribute Lookup</text>
+<text x="620" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">A child gets everything the parent has, then adds to it or replaces part of it</text>
+<rect x="390" y="146" width="460" height="118" rx="12" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="390" y="146" width="460" height="118" rx="12" fill="#1d0f33" stroke="#a855f7" stroke-width="2"/>
+<text x="620" y="176" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Animal</text>
+<text x="620" y="194" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">the base class</text>
+<text x="620" y="216" fill="#d8b4fe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">__init__(self, name, sound)</text>
+<text x="620" y="232.5" fill="#d8b4fe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">speak()</text>
+<rect x="96" y="336" width="308" height="160" rx="12" fill="none" stroke="#22d3ee" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="96" y="336" width="308" height="160" rx="12" fill="#05262f" stroke="#22d3ee" stroke-width="2"/>
+<text x="250" y="366" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Cat(Animal)</text>
+<text x="112" y="396" fill="#67e8f9" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">__init__()      overrides</text>
+<text x="112" y="411" fill="#67e8f9" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">  -&gt; super().__init__(name, "Meow")</text>
+<text x="112" y="426" fill="#67e8f9" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">speak()         inherited</text>
+<text x="112" y="441" fill="#67e8f9" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">purr()          new</text>
+<rect x="466" y="336" width="308" height="160" rx="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="466" y="336" width="308" height="160" rx="12" fill="#07301c" stroke="#22c55e" stroke-width="2"/>
+<text x="620" y="366" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Dog(Animal)</text>
+<text x="482" y="396" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">__init__()      overrides</text>
+<text x="482" y="411" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">  -&gt; super().__init__(name, "Woof")</text>
+<text x="482" y="426" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">speak()         inherited</text>
+<text x="482" y="441" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">fetch(item)     new</text>
+<rect x="836" y="336" width="308" height="160" rx="12" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="836" y="336" width="308" height="160" rx="12" fill="#2b1c05" stroke="#f59e0b" stroke-width="2"/>
+<text x="990" y="366" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">LoudDog(Dog)</text>
+<text x="852" y="396" fill="#fcd34d" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">__init__()      inherited</text>
+<text x="852" y="411" fill="#fcd34d" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">speak()         OVERRIDES Dog</text>
+<text x="852" y="426" fill="#fcd34d" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">fetch(item)     inherited</text>
+<text x="852" y="441" fill="#fcd34d" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"></text>
+<text x="852" y="456" fill="#fcd34d" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"></text>
+<path d="M250,264 L250,294 Q250,306 250,318 L250,330" fill="none" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#flowCyan)"/>
+<path d="M620,264 L620,330" fill="none" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#flowGreen)"/>
+<path d="M774,416 L830,416" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#flowAmber)"/>
+<text x="560" y="300" fill="#64748b" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">inherits from</text>
+<line x1="58" y1="542" x2="1182" y2="542" stroke="#1b2942" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="58" y="534" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">WHAT HAPPENS WHEN YOU CALL KITTY.SPEAK()</text>
+<rect x="58" y="572" width="356" height="76" rx="10" fill="#101827" stroke="#64748b" stroke-width="1.7"/>
+<circle cx="84" cy="598" r="12" fill="#0b1220" stroke="#64748b" stroke-width="1.5"/>
+<text x="84" y="602" fill="#94a3b8" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">1</text>
+<text x="106" y="602" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Look on the Cat class</text>
+<text x="106" y="628" fill="#94a3b8" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">not found</text>
+<line x1="416" y1="610" x2="430" y2="610" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="436" y="572" width="356" height="76" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<circle cx="462" cy="598" r="12" fill="#0b1220" stroke="#22c55e" stroke-width="1.5"/>
+<text x="462" y="602" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">2</text>
+<text x="484" y="602" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Follow the MRO up to Animal</text>
+<text x="484" y="628" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">found</text>
+<line x1="794" y1="610" x2="808" y2="610" stroke="#f43f5e" stroke-width="2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="814" y="572" width="356" height="76" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.7"/>
+<circle cx="840" cy="598" r="12" fill="#0b1220" stroke="#22c55e" stroke-width="1.5"/>
+<text x="840" y="602" fill="#86efac" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">3</text>
+<text x="862" y="602" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600" xml:space="preserve">Run Animal.speak(kitty)</text>
+<text x="862" y="628" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">Whiskers says Meow!</text>
+<rect x="58" y="676" width="546" height="70" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="676" width="4" height="70" rx="2" fill="#f59e0b"/>
+<text x="74" y="696" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">SUPER() IS NOT MAGIC</text>
+<text x="74" y="714" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">super().__init__(name, "Meow") simply runs the parent's setup so the child does</text>
+<text x="74" y="730" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">not have to copy those assignments.</text>
+<rect x="636" y="676" width="546" height="86" rx="8" fill="#2e0e0e" stroke="#ef4444" stroke-width="1" opacity="0.85"/>
+<rect x="636" y="676" width="4" height="86" rx="2" fill="#ef4444"/>
+<text x="652" y="696" fill="#fca5a5" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">USE IT SPARINGLY</text>
+<text x="652" y="714" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">The budget tracker gets its strength from composition — a tracker HAS</text>
+<text x="652" y="730" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">transactions. Reach for inheritance only when the child truly IS a kind of the</text>
+<text x="652" y="746" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">parent.</text>
+</svg>

@@ -148,6 +148,58 @@ Python syntax for choosing between several fixed options based on one value.
 
 The name used inside a class method to refer to the current object.
 
+## `__name__` / `if __name__ == "__main__":`
+
+`__name__` is a variable Python sets for every file. It holds `"__main__"` when that file is the one you ran, and the module's name when the file was imported by something else. The `if` guard therefore means "only run this when I am the program, not when I am being imported".
+
+## Module
+
+A single Python file that can be imported and reused by another file.
+
+## Docstring
+
+The string on the first line inside a function, class, or module. It describes what the thing does and shows up in `help()` and in editor tooltips.
+
+## f-string
+
+A string prefixed with `f` that can contain expressions inside braces, such as `f"Total: ${amount:.2f}"`.
+
+## Indentation
+
+The leading spaces that tell Python which lines belong to a block. Four spaces per level is the convention.
+
+## Block
+
+A group of lines that belong together because they share the same indentation, such as the body of an `if`, a loop, or a function.
+
+## Namespace
+
+The mapping of names to objects that Python searches when you use a name. Each function call gets its own.
+
+## Frame
+
+The temporary workspace Python creates for a single function call. It holds that call's local names and is thrown away when the function returns.
+
+## Traceback
+
+The report Python prints when an error is not handled. Read it from the bottom: the last line is the error type and message, and the line above it points at your code.
+
+## REPL
+
+The interactive Python prompt you get by typing `python` with no filename. Useful for trying one line at a time.
+
+## Context Manager
+
+An object used with the `with` statement that guarantees cleanup, such as the file object returned by `open()`.
+
+## CSV
+
+A plain-text table format with one record per line and commas between fields. Spreadsheets open it directly, but every value read back is a string.
+
+## `None`
+
+Python's "no value" object. It is falsy, and it is what a function returns when it has no `return` statement.
+
 ---
 
 Use this glossary whenever a chapter introduces a word that feels unfamiliar.

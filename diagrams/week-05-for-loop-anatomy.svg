@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 900" width="1300" height="900" role="img" aria-label="Anatomy of a for Loop">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1300" height="900" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1256" height="856" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="650" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 05 · LOOPS</text>
+<text x="650" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Anatomy of a for Loop</text>
+<text x="650" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Five parts on the header line, one indented body — then the same body runs once per item</text>
+<text x="62" y="132" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="92" y="132" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE STRUCTURE OF THE LOOP</text>
+<rect x="58" y="142" width="1184" height="214" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="96" y="192" width="1108" height="76" rx="11" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<rect x="156" y="208" width="73" height="44" rx="8" fill="#2b0f21" stroke="#ec4899" stroke-width="1.7"/>
+<text x="192.5" y="239" fill="#fbcfe8" font-size="22" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">for</text>
+<rect x="243" y="208" width="118" height="44" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1.7"/>
+<text x="302" y="239" fill="#fde68a" font-size="22" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">number</text>
+<rect x="375" y="208" width="58" height="44" rx="8" fill="#2b0f21" stroke="#ec4899" stroke-width="1.7"/>
+<text x="404" y="239" fill="#fbcfe8" font-size="22" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">in</text>
+<rect x="447" y="208" width="193" height="44" rx="8" fill="#05262f" stroke="#22d3ee" stroke-width="1.7"/>
+<text x="543.5" y="239" fill="#a5f3fc" font-size="22" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">range(1, 4)</text>
+<rect x="654" y="208" width="43" height="44" rx="8" fill="#1d0f33" stroke="#a855f7" stroke-width="1.7"/>
+<text x="675.5" y="239" fill="#e9d5ff" font-size="22" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">:</text>
+<line x1="192.5" y1="254" x2="192.5" y2="268" stroke="#ec4899" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="192.5" y="284" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">for</text>
+<text x="192.5" y="301" fill="#f0a8cd" font-size="10.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">keyword that starts the loop</text>
+<line x1="302" y1="254" x2="302" y2="314" stroke="#f59e0b" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="302" y="330" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">number</text>
+<text x="302" y="347" fill="#fcd34d" font-size="10.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">rebound on every pass</text>
+<line x1="404" y1="254" x2="404" y2="268" stroke="#ec4899" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="404" y="284" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">in</text>
+<text x="404" y="301" fill="#f0a8cd" font-size="10.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">reads as 'take each item of'</text>
+<line x1="543.5" y1="254" x2="543.5" y2="314" stroke="#22d3ee" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="543.5" y="330" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">range(1, 4)</text>
+<text x="543.5" y="347" fill="#67e8f9" font-size="10.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">the iterable, yields 1 2 3</text>
+<line x1="675.5" y1="254" x2="675.5" y2="268" stroke="#a855f7" stroke-width="1.2" stroke-linecap="round" stroke-dasharray="3 4"/>
+<text x="675.5" y="284" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">:</text>
+<text x="675.5" y="301" fill="#d8b4fe" font-size="10.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">colon opens the indented block</text>
+<text x="62" y="390" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="92" y="390" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE BODY · INDENTATION IS THE BLOCK</text>
+<rect x="58" y="400" width="560" height="190" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="84" y="436" width="508" height="120" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="100" y="464" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">for</tspan><tspan fill="#e2e8f0"> number </tspan><tspan fill="#f472b6">in</tspan><tspan fill="#60a5fa"> range</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#fbbf24">1</tspan><tspan fill="#8fa3bf">, </tspan><tspan fill="#fbbf24">4</tspan><tspan fill="#8fa3bf">):</tspan></text>
+<text x="100" y="486" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">    print</tspan><tspan fill="#8fa3bf">(number)</tspan><tspan fill="#5b6b86">      # in the loop</tspan></text>
+<text x="100" y="508" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">    total </tspan><tspan fill="#8fa3bf">+= number</tspan><tspan fill="#5b6b86">     # in the loop</tspan></text>
+<text x="100" y="530" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">"done"</tspan><tspan fill="#8fa3bf">)</tspan><tspan fill="#5b6b86">          # after the loop</tspan></text>
+<rect x="92" y="456" width="5" height="46" rx="2.5" fill="#22c55e"/>
+<text x="112" y="566" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">4 spaces = 'this line belongs to the loop'</text>
+<rect x="646" y="400" width="596" height="70" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="646" y="400" width="4" height="70" rx="2" fill="#f59e0b"/>
+<text x="662" y="420" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">RANGE(1, 4) STOPS BEFORE 4</text>
+<text x="662" y="438" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">range is start-inclusive and stop-exclusive. range(1, 4) gives 1, 2, 3 — and range(5)</text>
+<text x="662" y="454" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">gives 0, 1, 2, 3, 4.</text>
+<rect x="646" y="500" width="596" height="70" rx="8" fill="#05262f" stroke="#22d3ee" stroke-width="1" opacity="0.85"/>
+<rect x="646" y="500" width="4" height="70" rx="2" fill="#22d3ee"/>
+<text x="662" y="520" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">YOU RARELY NEED RANGE AT ALL</text>
+<text x="662" y="538" fill="#a5f3fc" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">for letter in "Python", for score in scores, for key, value in prices.items() — a for loop</text>
+<text x="662" y="554" fill="#a5f3fc" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">walks any sequence directly.</text>
+<text x="62" y="630" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">03</text>
+<text x="92" y="630" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">ONE PASS PER ITEM · THE LOOP VARIABLE IS REASSIGNED EACH TIME</text>
+<rect x="58" y="640" width="1184" height="176" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="92" y="676" width="258" height="104" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.8"/>
+<text x="108" y="698" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">PASS 1</text>
+<text x="221" y="726" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">number = 1</text>
+<text x="221" y="748" fill="#bbf7d0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">prints 1</text>
+<text x="221" y="768" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">total -&gt; 1</text>
+<line x1="354" y1="728" x2="376" y2="728" stroke="#f43f5e" stroke-width="2.2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="384" y="676" width="258" height="104" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.8"/>
+<text x="400" y="698" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">PASS 2</text>
+<text x="513" y="726" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">number = 2</text>
+<text x="513" y="748" fill="#bbf7d0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">prints 2</text>
+<text x="513" y="768" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">total -&gt; 3</text>
+<line x1="646" y1="728" x2="668" y2="728" stroke="#f43f5e" stroke-width="2.2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="676" y="676" width="258" height="104" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.8"/>
+<text x="692" y="698" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">PASS 3</text>
+<text x="805" y="726" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">number = 3</text>
+<text x="805" y="748" fill="#bbf7d0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">prints 3</text>
+<text x="805" y="768" fill="#86efac" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">total -&gt; 6</text>
+<line x1="938" y1="728" x2="960" y2="728" stroke="#f43f5e" stroke-width="2.2" stroke-linecap="round" marker-end="url(#flow)"/>
+<rect x="968" y="676" width="258" height="104" rx="11" fill="#101827" stroke="#64748b" stroke-width="1.8"/>
+<text x="984" y="698" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">EXHAUSTED</text>
+<text x="1097" y="726" fill="#f8fafc" font-size="15" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">no items left</text>
+<text x="1097" y="748" fill="#e2e8f0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">body skipped</text>
+<text x="1097" y="768" fill="#94a3b8" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">loop ends</text>
+<path d="M221,780 L221,790 Q221,800 231,800 L805,800" fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+<text x="670" y="816" fill="#64748b" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">same body, new value for number</text>
+<rect x="374.47" y="840" width="85.58" height="26" rx="13" fill="#0c1424" stroke="#ec4899" stroke-width="1.2" opacity="0.95"/>
+<circle cx="390.47" cy="853" r="4.5" fill="#ec4899"/>
+<text x="401.47" y="857" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">keyword</text>
+<rect x="470.05" y="840" width="121.22" height="26" rx="13" fill="#0c1424" stroke="#f59e0b" stroke-width="1.2" opacity="0.95"/>
+<circle cx="486.05" cy="853" r="4.5" fill="#f59e0b"/>
+<text x="497.05" y="857" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">loop variable</text>
+<rect x="601.27" y="840" width="91.52" height="26" rx="13" fill="#0c1424" stroke="#22d3ee" stroke-width="1.2" opacity="0.95"/>
+<circle cx="617.27" cy="853" r="4.5" fill="#22d3ee"/>
+<text x="628.27" y="857" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">iterable</text>
+<rect x="702.79" y="840" width="115.28" height="26" rx="13" fill="#0c1424" stroke="#a855f7" stroke-width="1.2" opacity="0.95"/>
+<circle cx="718.79" cy="853" r="4.5" fill="#a855f7"/>
+<text x="729.79" y="857" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">block opener</text>
+<rect x="828.07" y="840" width="97.46" height="26" rx="13" fill="#0c1424" stroke="#22c55e" stroke-width="1.2" opacity="0.95"/>
+<circle cx="844.07" cy="853" r="4.5" fill="#22c55e"/>
+<text x="855.07" y="857" fill="#cbd5e1" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">body runs</text>
+</svg>

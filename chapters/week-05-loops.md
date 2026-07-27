@@ -40,6 +40,10 @@ while count <= 3:
 
 This loop stops because `count` changes each time. If the condition never becomes false, you create an **infinite loop**.
 
+![The while loop cycle: set up, check the condition, run the body, change the variable, loop back — with a side-by-side of a loop that terminates and one that does not](../diagrams/week-05-while-loop-cycle.svg)
+
+*Three beats: check, run, change. Drop the third beat and the loop never ends.*
+
 ## `for` Loops
 
 A `for` loop is used when you want to go through a sequence, such as:
@@ -56,10 +60,18 @@ for number in range(3):
 
 Read that as: "For each number in this range, run the indented block."
 
+![Anatomy of a for loop: the header line broken into for, the loop variable, in, the iterable, and the colon, followed by an iteration-by-iteration trace](../diagrams/week-05-for-loop-anatomy.svg)
+
+*Take this one slowly. The top half names every part of the header line. The bottom half shows the same body running three times, with `number` rebound to a new value on each pass, until the iterable runs out.*
+
 ## `break` and `continue`
 
 - `break` stops the loop immediately
 - `continue` skips the rest of the current iteration and moves to the next one
+
+![The same loop over 1 to 5 shown twice: break stops at 3 and prints 1 2, continue skips 3 and prints 1 2 4 5](../diagrams/week-05-break-vs-continue.svg)
+
+*`break` leaves the loop. `continue` only skips the current item. Mixing them up is one of the most common Week 5 bugs.*
 
 ## Examples
 

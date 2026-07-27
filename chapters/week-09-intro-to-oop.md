@@ -38,6 +38,10 @@ my_dog = Dog()
 
 `Dog` is the class. `my_dog` is an object created from that class.
 
+![One Dog class definition on the left and two independent instances on the right, each with its own attribute values but sharing the class's methods](../diagrams/week-09-class-blueprint-to-objects.svg)
+
+*The class is written once and stores the methods. Every object built from it carries its own copy of the data.*
+
 ## The Role of `__init__`
 
 `__init__` runs when a new object is created. It is commonly used to give that object its starting data.
@@ -49,6 +53,10 @@ class Dog:
 ```
 
 `self` refers to the specific object being created or used.
+
+![Four steps of Dog("Buddy", ...): the class is called, an empty object is made, __init__ runs with that object as self, and the finished object is bound to a name — plus my_dog.bark() rewritten as Dog.bark(my_dog)](../diagrams/week-09-init-and-self.svg)
+
+*`self` is not magic. The object has to arrive somewhere, so Python passes it in as the first argument to every method. `self` is just the conventional name for that slot.*
 
 ## Good Class and Method Names
 
@@ -127,7 +135,7 @@ def add_income(transactions):
 def add_expense(transactions):
     desc = input("Description: ")
     amount = float(input("Amount: $"))
-    category = input("Category: ").title() or "Uncategorized"
+    category = input("Category: ").strip().title() or "Uncategorized"
     transactions.append(Transaction(desc, -amount, category))
 
 def get_balance(transactions):

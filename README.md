@@ -2,12 +2,16 @@
 
 This workspace contains a beginner-focused Python learning plan, weekly chapter notes, teaching support materials, and reference implementations for the Personal Budget Tracker project.
 
+![The 12-week build path: month 1 foundations, month 2 building blocks, month 3 OOP and shipping, all feeding into the Personal Budget Tracker](diagrams/course-roadmap.svg)
+
 ## Start Here
 
 - [python_learning_plan.md](python_learning_plan.md): the main 12-week roadmap
 - [chapters](chapters): the weekly lesson content
+- [diagrams](diagrams/README.md): every concept diagram, indexed by week
 - [python_beginner_glossary.md](python_beginner_glossary.md): quick definitions for beginner terms
 - [instructor_guide.md](instructor_guide.md): suggested answers and teaching notes
+- [IMPROVEMENTS.md](IMPROVEMENTS.md): prioritized backlog for contributors
 
 ## Reference Implementations
 
@@ -40,6 +44,24 @@ python3 budget_tracker_week10.py
 python3 budget_tracker_final.py
 ```
 
+On Windows, use `python` (or `py -3`) instead of `python3`.
+
+## Diagrams
+
+Every chapter includes one to three diagrams that make the underlying mechanics visible — how a
+variable is stored, what happens to a value passed into a function, how a `for` loop is structured.
+They live in [diagrams](diagrams/README.md).
+
+The diagrams are generated rather than hand-drawn, so the whole set stays visually consistent. The
+generator lives in the hidden `.tooling/` folder — it is repository maintenance, not course
+material, and learners never need to open it. Maintainers can rebuild every diagram with:
+
+```bash
+python .tooling/generate_diagrams.py
+```
+
+See [.tooling/README.md](.tooling/README.md) for details.
+
 ## Suggested Learning Flow For The Project
 
 - Weeks 1-5: build the basic interactive tracker
@@ -53,3 +75,7 @@ The goal is not to memorize every line. The goal is to understand why each versi
 
 - [dcodev1702](https://github.com/dcodev1702): project author and maintainer
 - GitHub Copilot: AI-assisted drafting, editing, and repository setup support
+
+## License
+
+Released under the [MIT License](LICENSE).

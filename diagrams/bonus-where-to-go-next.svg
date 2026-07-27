@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 720" width="1300" height="720" role="img" aria-label="Where to Take It Next">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1300" height="720" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1256" height="676" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="650" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">AFTER WEEK 12 · BONUS CHALLENGES</text>
+<text x="650" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Where to Take It Next</text>
+<text x="650" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Six upgrades to the same app, ordered by how much new ground each one covers</text>
+<text x="52" y="144" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="82" y="144" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">SHARPEN WHAT YOU KNOW</text>
+<rect x="48" y="154" width="388" height="350" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="70" y="190" width="344" height="88" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.6"/>
+<text x="90" y="220" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Search &amp; filter</text>
+<text x="90" y="242" fill="#bbf7d0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">loop + condition + string matching</text>
+<text x="392" y="264" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">week 5 · week 3</text>
+<rect x="70" y="292" width="344" height="88" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.6"/>
+<text x="90" y="322" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Monthly budgets</text>
+<text x="90" y="344" fill="#bbf7d0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">dict of limits, compare against totals</text>
+<text x="392" y="366" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">week 7</text>
+<rect x="70" y="394" width="344" height="88" rx="10" fill="#07301c" stroke="#22c55e" stroke-width="1.6"/>
+<text x="90" y="424" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Expense counter</text>
+<text x="90" y="446" fill="#bbf7d0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">one small, well-named method</text>
+<text x="392" y="468" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">week 10</text>
+<line x1="438" y1="330" x2="458" y2="330" stroke="#f43f5e" stroke-width="2.3" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="470" y="144" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="500" y="144" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">ONE NEW IDEA EACH</text>
+<rect x="466" y="154" width="388" height="350" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="488" y="190" width="344" height="88" rx="10" fill="#05262f" stroke="#22d3ee" stroke-width="1.6"/>
+<text x="508" y="220" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Dates on transactions</text>
+<text x="508" y="242" fill="#a5f3fc" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">the datetime module</text>
+<text x="810" y="264" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">new stdlib</text>
+<rect x="488" y="292" width="344" height="88" rx="10" fill="#05262f" stroke="#22d3ee" stroke-width="1.6"/>
+<text x="508" y="322" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Export to CSV</text>
+<text x="508" y="344" fill="#a5f3fc" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">the csv module and DictWriter</text>
+<text x="810" y="366" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">new stdlib</text>
+<rect x="488" y="394" width="344" height="88" rx="10" fill="#05262f" stroke="#22d3ee" stroke-width="1.6"/>
+<text x="508" y="424" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Multiple accounts</text>
+<text x="508" y="446" fill="#a5f3fc" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">a second tracker, or inheritance</text>
+<text x="810" y="468" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">week 12</text>
+<line x1="856" y1="330" x2="876" y2="330" stroke="#f43f5e" stroke-width="2.3" stroke-linecap="round" marker-end="url(#flow)"/>
+<text x="888" y="144" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">03</text>
+<text x="918" y="144" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">BEYOND THIS COURSE</text>
+<rect x="884" y="154" width="388" height="350" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="906" y="190" width="344" height="88" rx="10" fill="#1d0f33" stroke="#a855f7" stroke-width="1.6"/>
+<text x="926" y="220" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Charts</text>
+<text x="926" y="242" fill="#e9d5ff" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">matplotlib — your first pip install</text>
+<text x="1228" y="264" fill="#d8b4fe" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">third party</text>
+<rect x="906" y="292" width="344" height="88" rx="10" fill="#1d0f33" stroke="#a855f7" stroke-width="1.6"/>
+<text x="926" y="322" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">Automated tests</text>
+<text x="926" y="344" fill="#e9d5ff" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">pytest — prove it still works</text>
+<text x="1228" y="366" fill="#d8b4fe" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">new discipline</text>
+<rect x="906" y="394" width="344" height="88" rx="10" fill="#1d0f33" stroke="#a855f7" stroke-width="1.6"/>
+<text x="926" y="424" fill="#f8fafc" font-size="14.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" xml:space="preserve">A second project</text>
+<text x="926" y="446" fill="#e9d5ff" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">quiz game · to-do list · calculator</text>
+<text x="1228" y="468" fill="#d8b4fe" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">transfer the skills</text>
+<rect x="48" y="548" width="620" height="70" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="48" y="548" width="4" height="70" rx="2" fill="#f59e0b"/>
+<text x="64" y="568" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">THE HABIT THAT MATTERS MOST</text>
+<text x="64" y="586" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Twenty minutes every day beats one long session a week. Break your own code on purpose and</text>
+<text x="64" y="602" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">read the traceback before you fix it.</text>
+<rect x="698" y="548" width="554" height="70" rx="8" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1" opacity="0.85"/>
+<rect x="698" y="548" width="4" height="70" rx="2" fill="#3b82f6"/>
+<text x="714" y="568" fill="#93c5fd" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">EXPLAIN IT OUT LOUD</text>
+<text x="714" y="586" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">If you can describe variables, loops, functions, and classes to someone else in</text>
+<text x="714" y="602" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">your own words, you actually own the concept.</text>
+</svg>

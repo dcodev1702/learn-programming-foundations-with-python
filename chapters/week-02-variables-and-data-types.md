@@ -25,6 +25,10 @@ In that example, `age` is the variable name and `25` is the value.
 
 Variables let you store data, reuse it later, and update it as your program runs.
 
+![How Python stores a variable: names live in a namespace and point at separate objects held in memory](../diagrams/week-02-how-variables-are-stored.svg)
+
+*A variable is not a box that holds a value. It is a name tag tied to an object that already exists in memory. This one picture explains almost everything that confuses beginners about variables, functions, and lists later on.*
+
 ```python
 score = 10
 score = score + 5
@@ -32,6 +36,10 @@ print(score)   # 15
 ```
 
 This is called **reassignment**. The variable name stays the same, but the value changes.
+
+![What reassignment does: the right side is evaluated into a new object, then the name is re-pointed at it and the old object becomes unreachable](../diagrams/week-02-reassignment-and-memory.svg)
+
+*`score = score + 5` never edits the number `10`. Python builds a new `15`, re-points the name, and the old object is thrown away.*
 
 ## Data Types in Plain English
 
@@ -100,6 +108,14 @@ monthly_expense_total = 50
 ```
 
 Both are valid, but the second name tells the reader more.
+
+## Getting Input and Converting It
+
+`input()` hands back a string every single time, even when the user types digits. Convert before you calculate.
+
+![input() always returns a string; int(), float(), and str() convert it, and skipping the conversion raises TypeError or ValueError](../diagrams/week-02-input-and-type-conversion.svg)
+
+*The two failure modes at the bottom of that diagram are the most common Week 2 errors. Read them once now and you will recognise them instantly later.*
 
 ## Examples
 

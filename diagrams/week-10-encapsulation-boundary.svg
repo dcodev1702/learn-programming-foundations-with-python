@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" width="1240" height="760" role="img" aria-label="The Class Is a Boundary">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1240" height="760" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1196" height="716" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="620" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 10 · ENCAPSULATION</text>
+<text x="620" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">The Class Is a Boundary</text>
+<text x="620" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Outside code asks the object to do something — it does not reach in and rearrange the furniture</text>
+<rect x="372" y="142" width="484" height="458" rx="18" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.4" filter="url(#neon)"/>
+<rect x="380" y="150" width="468" height="442" rx="16" fill="#120a24" stroke="#a855f7" stroke-width="2"/>
+<text x="614" y="184" fill="#f8fafc" font-size="19" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">BudgetTracker</text>
+<text x="614" y="204" fill="#d8b4fe" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">one object that owns its own data</text>
+<text x="408" y="242" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">STATE</text>
+<rect x="408" y="258" width="412" height="36" rx="8" fill="#05262f" stroke="#22d3ee" stroke-width="1.4"/>
+<text x="424" y="282" fill="#a5f3fc" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.owner</text>
+<text x="804" y="282" fill="#67e8f9" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">"Alex"</text>
+<rect x="408" y="302" width="412" height="36" rx="8" fill="#05262f" stroke="#22d3ee" stroke-width="1.4"/>
+<text x="424" y="326" fill="#a5f3fc" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.transactions</text>
+<text x="804" y="326" fill="#67e8f9" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="end" xml:space="preserve">[ 3 Transaction ]</text>
+<text x="408" y="368" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">BEHAVIOUR · THE ONLY WAY IN</text>
+<rect x="408" y="384" width="412" height="30" rx="7" fill="#07301c" stroke="#22c55e" stroke-width="1.3"/>
+<text x="424" y="404" fill="#bbf7d0" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">add_income(desc, amount)</text>
+<rect x="408" y="422" width="412" height="30" rx="7" fill="#07301c" stroke="#22c55e" stroke-width="1.3"/>
+<text x="424" y="442" fill="#bbf7d0" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">add_expense(desc, amount, cat)</text>
+<rect x="408" y="460" width="412" height="30" rx="7" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1.3"/>
+<text x="424" y="480" fill="#bfdbfe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">get_balance()</text>
+<rect x="408" y="498" width="412" height="30" rx="7" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1.3"/>
+<text x="424" y="518" fill="#bfdbfe" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">show_summary()</text>
+<rect x="408" y="536" width="412" height="30" rx="7" fill="#2b1c05" stroke="#f59e0b" stroke-width="1.3"/>
+<text x="424" y="556" fill="#fde68a" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">__str__()</text>
+<rect x="48" y="210" width="250" height="118" rx="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="48" y="210" width="250" height="118" rx="12" fill="#07301c" stroke="#22c55e" stroke-width="2"/>
+<text x="173" y="240" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Allowed</text>
+<text x="173" y="258" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">tracker.add_expense("Coffee", 4.5,</text>
+<text x="173" y="273" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">"Food")</text>
+<line x1="304" y1="262" x2="374" y2="262" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" marker-end="url(#flowGreen)"/>
+<text x="339" y="244" fill="#86efac" font-size="9.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">goes through</text>
+<text x="339" y="233" fill="#86efac" font-size="9.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">a method</text>
+<rect x="48" y="392" width="250" height="118" rx="12" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="48" y="392" width="250" height="118" rx="12" fill="#2e0e0e" stroke="#ef4444" stroke-width="2"/>
+<text x="173" y="422" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Avoid</text>
+<text x="173" y="440" fill="#fecaca" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">tracker.transactions.append("oops")</text>
+<line x1="304" y1="444" x2="374" y2="444" stroke="#ef4444" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="6 5"/>
+<circle cx="339" cy="444" r="13" fill="#2e0e0e" stroke="#ef4444" stroke-width="2"/>
+<line x1="334" y1="439" x2="344" y2="449" stroke="#fecaca" stroke-width="2" stroke-linecap="round"/>
+<line x1="344" y1="439" x2="334" y2="449" stroke="#fecaca" stroke-width="2" stroke-linecap="round"/>
+<text x="173" y="534" fill="#fca5a5" font-size="10" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">no validation, no invariants,</text>
+<text x="173" y="550" fill="#fca5a5" font-size="10" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">no summary update</text>
+<rect x="930" y="210" width="252" height="118" rx="12" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="930" y="210" width="252" height="118" rx="12" fill="#0a1e3c" stroke="#3b82f6" stroke-width="2"/>
+<text x="1056" y="240" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Reads are cheap</text>
+<text x="1056" y="258" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">tracker.get_balance() recomputes</text>
+<text x="1056" y="273" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">from the list every time</text>
+<line x1="854" y1="262" x2="924" y2="262" stroke="#3b82f6" stroke-width="2.4" stroke-linecap="round" marker-end="url(#flowBlue)"/>
+<rect x="930" y="392" width="252" height="118" rx="12" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="930" y="392" width="252" height="118" rx="12" fill="#2b1c05" stroke="#f59e0b" stroke-width="2"/>
+<text x="1056" y="422" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">__str__</text>
+<text x="1056" y="440" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">print(tracker) shows something a</text>
+<text x="1056" y="455" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">human can read</text>
+<line x1="854" y1="444" x2="924" y2="444" stroke="#f59e0b" stroke-width="2.4" stroke-linecap="round" marker-end="url(#flowAmber)"/>
+<rect x="58" y="626" width="546" height="70" rx="8" fill="#1d0f33" stroke="#a855f7" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="626" width="4" height="70" rx="2" fill="#a855f7"/>
+<text x="74" y="646" fill="#d8b4fe" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">WHAT ENCAPSULATION BUYS YOU</text>
+<text x="74" y="664" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Validation lives in one place, the class can change its internals without breaking</text>
+<text x="74" y="680" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">callers, and the main loop shrinks to menu handling.</text>
+<rect x="636" y="626" width="546" height="70" rx="8" fill="#101827" stroke="#64748b" stroke-width="1" opacity="0.85"/>
+<rect x="636" y="626" width="4" height="70" rx="2" fill="#64748b"/>
+<text x="652" y="646" fill="#94a3b8" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">PYTHON'S CONVENTION, NOT A LOCK</text>
+<text x="652" y="664" fill="#e2e8f0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">A leading underscore (_balance) signals 'internal, please do not touch'. Python</text>
+<text x="652" y="680" fill="#e2e8f0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">trusts you rather than enforcing it.</text>
+</svg>

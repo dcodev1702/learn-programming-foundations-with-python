@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 760" width="1240" height="760" role="img" aria-label="One Blueprint, Many Objects">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1240" height="760" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1196" height="716" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="620" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 09 · INTRO TO OOP</text>
+<text x="620" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">One Blueprint, Many Objects</text>
+<text x="620" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">The class is written once. Every instance gets its own attribute values but shares the same methods</text>
+<text x="62" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">01</text>
+<text x="92" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE CLASS · A BLUEPRINT</text>
+<rect x="58" y="150" width="480" height="424" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="84" y="190" width="428" height="196" rx="10" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="98" y="215.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">class</tspan><tspan fill="#c4b5fd"> Dog</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="98" y="236.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">    def</tspan><tspan fill="#60a5fa"> __init__</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#e2e8f0">self</tspan><tspan fill="#8fa3bf">, name, breed, age):</tspan></text>
+<text x="98" y="257.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">        self.name  </tspan><tspan fill="#8fa3bf">= name</tspan></text>
+<text x="98" y="278.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">        self.breed </tspan><tspan fill="#8fa3bf">= breed</tspan></text>
+<text x="98" y="299.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#e2e8f0">        self.age   </tspan><tspan fill="#8fa3bf">= age</tspan></text>
+<text x="98" y="341.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">    def</tspan><tspan fill="#60a5fa"> bark</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#e2e8f0">self</tspan><tspan fill="#8fa3bf">):</tspan></text>
+<text x="98" y="362.5" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#60a5fa">        print</tspan><tspan fill="#8fa3bf">(</tspan><tspan fill="#86efac">f"{self.name} says: Woof!"</tspan><tspan fill="#8fa3bf">)</tspan></text>
+<rect x="84" y="418" width="428" height="72" rx="12" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="84" y="418" width="428" height="72" rx="12" fill="#1d0f33" stroke="#a855f7" stroke-width="2"/>
+<text x="298" y="448" fill="#f8fafc" font-size="14" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Stored once, on the class</text>
+<text x="298" y="466" fill="#e9d5ff" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">__init__ · bark · describe</text>
+<text x="298" y="528" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">No dog exists yet. This is only the plan.</text>
+<text x="714" y="140" fill="#33507c" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.5" xml:space="preserve">02</text>
+<text x="744" y="140" fill="#8aa2c0" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="2.2" xml:space="preserve">THE OBJECTS · REAL INSTANCES</text>
+<rect x="710" y="150" width="472" height="424" rx="12" fill="#0d1526" stroke="#1b2942" stroke-width="1.2"/>
+<rect x="736" y="194" width="420" height="152" rx="11" fill="#07301c" stroke="#22c55e" stroke-width="1.9"/>
+<text x="756" y="222" fill="#f8fafc" font-size="14" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" xml:space="preserve">my_dog</text>
+<text x="1136" y="222" fill="#86efac" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">Dog instance</text>
+<line x1="752" y1="236" x2="1140" y2="236" stroke="#22c55e" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+<text x="760" y="264" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.name</text>
+<text x="1132" y="264" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">"Buddy"</text>
+<text x="760" y="290" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.breed</text>
+<text x="1132" y="290" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">"Golden Retriever"</text>
+<text x="760" y="316" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.age</text>
+<text x="1132" y="316" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">3</text>
+<line x1="692" y1="270" x2="730" y2="270" stroke="#22c55e" stroke-width="2.2" stroke-linecap="round" marker-end="url(#flowGreen)"/>
+<rect x="736" y="372" width="420" height="152" rx="11" fill="#05262f" stroke="#22d3ee" stroke-width="1.9"/>
+<text x="756" y="400" fill="#f8fafc" font-size="14" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" xml:space="preserve">your_dog</text>
+<text x="1136" y="400" fill="#67e8f9" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">Dog instance</text>
+<line x1="752" y1="414" x2="1140" y2="414" stroke="#22d3ee" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+<text x="760" y="442" fill="#67e8f9" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.name</text>
+<text x="1132" y="442" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">"Luna"</text>
+<text x="760" y="468" fill="#67e8f9" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.breed</text>
+<text x="1132" y="468" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">"Husky"</text>
+<text x="760" y="494" fill="#67e8f9" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">self.age</text>
+<text x="1132" y="494" fill="#f8fafc" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="end" xml:space="preserve">5</text>
+<line x1="692" y1="448" x2="730" y2="448" stroke="#22d3ee" stroke-width="2.2" stroke-linecap="round" marker-end="url(#flowCyan)"/>
+<text x="946" y="556" fill="#94a3b8" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Two objects, two sets of values, one shared set of methods.</text>
+<rect x="58" y="602" width="546" height="70" rx="8" fill="#2b1c05" stroke="#f59e0b" stroke-width="1" opacity="0.85"/>
+<rect x="58" y="602" width="4" height="70" rx="2" fill="#f59e0b"/>
+<text x="74" y="622" fill="#fcd34d" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">CLASS VS OBJECT</text>
+<text x="74" y="640" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Dog is the class. my_dog is an object (also called an instance). Dog("Buddy", ...)</text>
+<text x="74" y="656" fill="#fde68a" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">is the moment one is built.</text>
+<rect x="636" y="602" width="546" height="70" rx="8" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1" opacity="0.85"/>
+<rect x="636" y="602" width="4" height="70" rx="2" fill="#3b82f6"/>
+<text x="652" y="622" fill="#93c5fd" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">NAMING CONVENTION</text>
+<text x="652" y="640" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">Classes use PascalCase nouns: Transaction, BudgetTracker. Methods use snake_case</text>
+<text x="652" y="656" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" xml:space="preserve">verbs: add_income(), is_expense().</text>
+</svg>

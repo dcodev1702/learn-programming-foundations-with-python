@@ -33,6 +33,10 @@ The condition `age >= 18` evaluates to either `True` or `False`.
 
 Only one branch runs in a single `if` / `elif` / `else` chain.
 
+![Tracing temperature = 72 through an if/elif/else chain: the first condition is False, the second is True and runs, and the else is never evaluated](../diagrams/week-03-if-elif-else-flow.svg)
+
+*Python tests the conditions in order and stops at the first `True`. Everything below it is skipped without even being evaluated.*
+
 ## How to Read Conditions
 
 ```python
@@ -76,6 +80,10 @@ Some values behave like `False` in a condition:
 - `None`
 
 Everything else is usually treated as true.
+
+![Falsy values (0, 0.0, empty string, empty list, empty dict, empty set, None, False) versus truthy values, plus truth tables for and, or, and not](../diagrams/week-03-truthy-falsy-and-operators.svg)
+
+*This is why `if name:` is the normal way to ask "did the user actually type something?" — an empty string is falsy all on its own.*
 
 ## Examples
 

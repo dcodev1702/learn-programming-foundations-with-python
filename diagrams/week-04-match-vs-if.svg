@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="1200" height="640" role="img" aria-label="Choosing Between match and if / elif">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1200" height="640" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1156" height="596" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="600" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 04 · PATTERN MATCHING</text>
+<text x="600" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Choosing Between match and if / elif</text>
+<text x="600" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Same value, many fixed options → match. Ranges and combined logic → if</text>
+<rect x="58" y="150" width="540" height="230" rx="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="58" y="150" width="540" height="230" rx="12" fill="#07301c" stroke="#22c55e" stroke-width="2"/>
+<text x="328" y="180" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Reach for match</text>
+<text x="328" y="198" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">one subject compared against fixed, known values</text>
+<text x="74" y="268" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">menu choices        "1" "2" "3" "4"</text>
+<text x="74" y="284.5" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">command words       start / stop / status</text>
+<text x="74" y="301" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">day names           "saturday" | "sunday"</text>
+<text x="74" y="317.5" fill="#86efac" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">status codes        200 / 404 / 500</text>
+<line x1="70" y1="350" x2="586" y2="350" stroke="#22c55e" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+<text x="328" y="367" fill="#fbbf24" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" letter-spacing="0.3" xml:space="preserve">the subject is evaluated once</text>
+<rect x="622" y="150" width="540" height="230" rx="12" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="622" y="150" width="540" height="230" rx="12" fill="#0a1e3c" stroke="#3b82f6" stroke-width="2"/>
+<text x="892" y="180" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Reach for if / elif</text>
+<text x="892" y="198" fill="#bfdbfe" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">each branch asks a different question</text>
+<text x="638" y="268" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">ranges              score &gt;= 90</text>
+<text x="638" y="284.5" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">combined logic      age &gt;= 18 and has_id</text>
+<text x="638" y="301" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">membership          if name in blocked</text>
+<text x="638" y="317.5" fill="#93c5fd" font-size="12" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve">truthiness          if not transactions</text>
+<line x1="634" y1="350" x2="1150" y2="350" stroke="#3b82f6" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
+<text x="892" y="367" fill="#fbbf24" font-size="10.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" letter-spacing="0.3" xml:space="preserve">every branch re-evaluates something</text>
+<line x1="58" y1="416" x2="1162" y2="416" stroke="#1b2942" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="58" y="408" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">THE SAME MENU, BOTH WAYS</text>
+<rect x="58" y="444" width="540" height="136" rx="10" fill="#080e1c" stroke="#1f4030" stroke-width="1.2"/>
+<text x="72" y="464" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">FLAT AND SCANNABLE</text>
+<text x="72" y="494.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">match</tspan><tspan fill="#e2e8f0"> choice:</tspan></text>
+<text x="72" y="515.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">    case</tspan><tspan fill="#86efac"> "1"</tspan><tspan fill="#8fa3bf">:</tspan><tspan fill="#94a3b8">  add_income()</tspan></text>
+<text x="72" y="536.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">    case</tspan><tspan fill="#86efac"> "2"</tspan><tspan fill="#8fa3bf">:</tspan><tspan fill="#94a3b8">  add_expense()</tspan></text>
+<text x="72" y="557.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">    case</tspan><tspan fill="#8fa3bf"> _</tspan><tspan fill="#8fa3bf">:</tspan><tspan fill="#94a3b8">    print("Invalid")</tspan></text>
+<rect x="622" y="444" width="540" height="136" rx="10" fill="#080e1c" stroke="#1e3555" stroke-width="1.2"/>
+<text x="636" y="464" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.6" xml:space="preserve">WORKS, BUT REPETITIVE</text>
+<text x="636" y="494.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">if</tspan><tspan fill="#e2e8f0"> choice == </tspan><tspan fill="#86efac">"1"</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="636" y="515.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#94a3b8">    add_income()</tspan></text>
+<text x="636" y="536.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#f472b6">elif</tspan><tspan fill="#e2e8f0"> choice == </tspan><tspan fill="#86efac">"2"</tspan><tspan fill="#8fa3bf">:</tspan></text>
+<text x="636" y="557.5" font-size="12.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" xml:space="preserve"><tspan fill="#94a3b8">    add_expense()</tspan><tspan fill="#5b6b86">   # repeats 'choice ==' each time</tspan></text>
+<text x="600" y="602" fill="#fbbf24" font-size="11.5" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">match needs Python 3.10 or newer — this course targets 3.13, so you are safe.</text>
+</svg>

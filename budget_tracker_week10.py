@@ -7,9 +7,10 @@ class Transaction:
     def is_expense(self):
         return self.amount < 0
 
-    def display(self, index):
+    def display(self, index=None):
         sign = "+" if self.amount >= 0 else ""
-        print(f"  {index}. [{self.category}] {self.description}: {sign}${self.amount:.2f}")
+        prefix = f"{index}. " if index is not None else ""
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${self.amount:.2f}")
 
 
 class BudgetTracker:

@@ -51,6 +51,10 @@ Negative indexes count from the end.
 print(colors[-1])  # blue
 ```
 
+![A six-item list with positive indexes above and negative indexes below, plus a slicing view showing that numbers[1:4] cuts between boundary 1 and boundary 4](../diagrams/week-06-index-and-slicing.svg)
+
+*An index points at an item. A slice boundary points at the gap between items — which is exactly why `numbers[1:4]` gives you three items and not four.*
+
 ## Mutability Matters
 
 Because lists are mutable, methods like `append()` and `remove()` change the original list.
@@ -62,6 +66,10 @@ print(items)   # [1, 2, 3, 4]
 ```
 
 This becomes important later when you pass lists to functions.
+
+![A list mutated in place keeps the same object id, while assigning into a tuple raises TypeError](../diagrams/week-06-list-vs-tuple-mutability.svg)
+
+*`append()` changes the object you already have — the identity never changes. A tuple simply refuses. Remember this picture when you reach Week 8.*
 
 ## Examples
 
@@ -134,7 +142,7 @@ while True:
         case "2":
             desc = input("Description: ")
             amount = float(input("Amount: $"))
-            category = input("Category: ").title()
+            category = input("Category: ").strip().title() or "Uncategorized"
             balance -= amount
             transactions.append((desc, -amount, category))
         case "3":
@@ -172,6 +180,7 @@ while True:
 - Trying to change a tuple after it has been created.
 - Mixing too many unrelated kinds of data in one list without a clear structure.
 - Forgetting that list methods such as `append()` change the original list.
+- Trusting raw `input()`. Always `.strip()` text before you store it, or a user who presses the space bar creates a category named `"   "`.
 
 ## Recap Questions
 

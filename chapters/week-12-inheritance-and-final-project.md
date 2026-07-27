@@ -55,6 +55,10 @@ class Dog(Animal):
 
 That is called **overriding**.
 
+![An Animal base class with Cat, Dog, and LoudDog children, marking which members are inherited, overridden, or new, plus the three lookup steps behind kitty.speak()](../diagrams/week-12-inheritance-and-super.svg)
+
+*When you call `kitty.speak()`, Python looks on `Cat` first, does not find it, walks up to `Animal`, and runs the version it finds there. That walk is the method resolution order.*
+
 ## When to Use Inheritance Carefully
 
 Inheritance is useful when one class is truly a specialized version of another.
@@ -105,7 +109,13 @@ class LoudDog(Dog):
 
 ## Project Step — Final Assembly
 
-Start with your Week 11 version and finish the same budget tracker by adding validation, a polished main loop, and a few final quality improvements:
+Start with your Week 11 version and finish the same budget tracker by adding validation, a polished main loop, and a few final quality improvements.
+
+Here is everything you have built, in one picture:
+
+![Full application topology: main() feeds a while loop, which dispatches with match to BudgetTracker methods, which own Transaction objects and persist to budget_data.json — each block tagged with the week that introduced it](../diagrams/week-12-final-app-architecture.svg)
+
+*Every block is tagged with the week that introduced it. Nothing in the final program is new — it is the same twelve ideas, wired together.*
 
 ```python
 import json
@@ -120,9 +130,10 @@ class Transaction:
     def is_expense(self):
         return self.amount < 0
 
-    def display(self, index):
+    def display(self, index=None):
         sign = "+" if self.amount >= 0 else ""
-        print(f"  {index}. [{self.category}] {self.description}: {sign}${self.amount:.2f}")
+        prefix = f"{index}. " if index is not None else ""
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${self.amount:.2f}")
 
     def to_dict(self):
         return {
@@ -133,7 +144,11 @@ class Transaction:
 
     @classmethod
     def from_dict(cls, data):
-        return cls(data["description"], data["amount"], data["category"])
+        return cls(
+            data["description"],
+            data["amount"],
+            data.get("category", "Uncategorized"),
+        )
 
 
 class BudgetTracker:
@@ -204,6 +219,10 @@ class BudgetTracker:
             print(f"  Welcome back, {self.owner}! Loaded {len(self.transactions)} transactions.")
         except FileNotFoundError:
             print("  No saved data found. Starting fresh!")
+        except json.JSONDecodeError:
+            print(f"  {filename} is not valid JSON. Starting fresh!")
+        except (KeyError, TypeError):
+            print(f"  {filename} is missing expected fields. Starting fresh!")
 
 
 def get_valid_amount(prompt):
@@ -280,6 +299,33 @@ if __name__ == "__main__":
     main()
 ```
 
+## Why the Last Two Lines Look Like That
+
+`if __name__ == "__main__":` is the strangest-looking line in the whole program, and it is worth two minutes.
+
+Every Python file has a built-in variable called `__name__`. Python sets it for you:
+
+- If you **run** the file directly (`python budget_tracker.py`), `__name__` is the string `"__main__"`.
+- If some *other* file **imports** it (`import budget_tracker`), `__name__` is `"budget_tracker"` instead.
+
+So the guard reads: *"only start the app if this file is the one that was run."*
+
+```python
+def main():
+    print("Starting the app...")
+
+print(__name__)          # "__main__" when you run this file
+
+if __name__ == "__main__":
+    main()
+```
+
+Without the guard, the last line would just be `main()` — and then the entire interactive menu would launch the moment anyone imported your file to reuse a single function or to write a test.
+
+You do not need it for a script you only ever run. You do need it the moment a file might be imported, which is why every reference implementation in this repo has it.
+
+Remember the two underscores on each side: `__name__`, not `_name_`.
+
 ## Try It Yourself
 
 1. Add a budget limit and warn the user when a category total goes over it.
@@ -315,11 +361,13 @@ if __name__ == "__main__":
 1. What does inheritance allow a child class to do?
 2. What is `super()` used for?
 3. What does it mean to override a method?
-4. Which earlier concepts show up in the final budget tracker?
+4. What does `if __name__ == "__main__":` protect against?
+5. Which earlier concepts show up in the final budget tracker?
 
 ## Ready to Move On?
 
 - I can explain inheritance and recognize when it is useful.
+- I can explain why the last two lines of the program are guarded.
 - I can trace how the final project uses ideas from earlier weeks.
 - I can run, test, save, and load the final budget tracker.
 - I can identify at least one feature I could add next on my own.

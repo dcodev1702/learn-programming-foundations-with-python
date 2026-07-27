@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 640" width="1180" height="640" role="img" aria-label="Anatomy of Your First Statement">
+  <defs>
+    <marker id="flow" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="flowSoft" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#64748b"/>
+    </marker>
+    <marker id="flowGreen" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22c55e"/>
+    </marker>
+    <marker id="flowAmber" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="flowCyan" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#22d3ee"/>
+    </marker>
+    <marker id="flowPurple" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#a855f7"/>
+    </marker>
+    <marker id="flowBlue" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="flowRed" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6.5" markerHeight="6.5" orient="auto-start-reverse">
+      <path d="M0,0.6 L10,5 L0,9.4 z" fill="#ef4444"/>
+    </marker>
+    <filter id="neon" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="pageWash" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0e1728"/>
+      <stop offset="100%" stop-color="#070b14"/>
+    </linearGradient>
+  </defs>
+<rect x="0" y="0" width="1180" height="640" rx="0" fill="#070b14"/>
+<rect x="22" y="22" width="1136" height="596" rx="16" fill="url(#pageWash)" stroke="#1e293b" stroke-width="1.4"/>
+<text x="590" y="52" fill="#5b7192" font-size="11" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" letter-spacing="3.2" xml:space="preserve">WEEK 01 · GETTING STARTED</text>
+<text x="590" y="84" fill="#f8fafc" font-size="25" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">Anatomy of Your First Statement</text>
+<text x="590" y="108" fill="#94a3b8" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Every part of print("Hello, World!") has a name and a job</text>
+<rect x="96" y="222" width="988" height="92" rx="12" fill="#080e1c" stroke="#1e2b45" stroke-width="1.2"/>
+<text x="112" y="242" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">ONE STATEMENT</text>
+<rect x="200" y="246" width="104.6" height="46" rx="8" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1.6"/>
+<text x="252.3" y="278" fill="#bfdbfe" font-size="25" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">print</text>
+<rect x="310.6" y="246" width="40.12" height="46" rx="8" fill="#101827" stroke="#64748b" stroke-width="1.6"/>
+<text x="330.66" y="278" fill="#e2e8f0" font-size="25" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">(</text>
+<rect x="356.72" y="246" width="265.8" height="46" rx="8" fill="#07301c" stroke="#22c55e" stroke-width="1.6"/>
+<text x="489.62" y="278" fill="#bbf7d0" font-size="25" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">"Hello, World!"</text>
+<rect x="628.52" y="246" width="40.12" height="46" rx="8" fill="#101827" stroke="#64748b" stroke-width="1.6"/>
+<text x="648.58" y="278" fill="#e2e8f0" font-size="25" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" text-anchor="middle" xml:space="preserve">)</text>
+<rect x="134.3" y="152" width="236" height="58" rx="9" fill="#0a1e3c" stroke="#3b82f6" stroke-width="1.4"/>
+<text x="252.3" y="176" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">function name</text>
+<text x="252.3" y="195" fill="#bfdbfe" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">the action you want to run</text>
+<line x1="252.3" y1="210" x2="252.3" y2="244" stroke="#3b82f6" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="212.66" y="364" width="236" height="58" rx="9" fill="#101827" stroke="#64748b" stroke-width="1.4"/>
+<text x="330.66" y="388" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">opening paren</text>
+<text x="330.66" y="407" fill="#e2e8f0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">arguments start here</text>
+<line x1="330.66" y1="294" x2="330.66" y2="364" stroke="#64748b" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="371.62" y="152" width="236" height="58" rx="9" fill="#07301c" stroke="#22c55e" stroke-width="1.4"/>
+<text x="489.62" y="176" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">string literal</text>
+<text x="489.62" y="195" fill="#bbf7d0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">text lives inside quotes</text>
+<line x1="489.62" y1="210" x2="489.62" y2="244" stroke="#22c55e" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 4"/>
+<rect x="530.58" y="364" width="236" height="58" rx="9" fill="#101827" stroke="#64748b" stroke-width="1.4"/>
+<text x="648.58" y="388" fill="#f8fafc" font-size="12.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">closing paren</text>
+<text x="648.58" y="407" fill="#e2e8f0" font-size="11" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">the call is complete</text>
+<line x1="648.58" y1="294" x2="648.58" y2="364" stroke="#64748b" stroke-width="1.3" stroke-linecap="round" stroke-dasharray="4 4"/>
+<line x1="96" y1="466" x2="1084" y2="466" stroke="#1b2942" stroke-width="1" stroke-linecap="round" stroke-dasharray="4 6"/>
+<text x="96" y="458" fill="#64748b" font-size="10" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" font-weight="700" letter-spacing="1.8" xml:space="preserve">CODE VS. COMMENT</text>
+<rect x="96" y="492" width="478" height="108" rx="12" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="96" y="492" width="478" height="108" rx="12" fill="#07301c" stroke="#22c55e" stroke-width="2"/>
+<text x="335" y="522" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">This runs</text>
+<text x="335" y="540" fill="#bbf7d0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Python executes it and something happens</text>
+<text x="335" y="566" fill="#86efac" font-size="13" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve">print("Budget Tracker")</text>
+<rect x="606" y="492" width="478" height="108" rx="12" fill="none" stroke="#64748b" stroke-width="2" opacity="0.5" filter="url(#neon)"/>
+<rect x="606" y="492" width="478" height="108" rx="12" fill="#101827" stroke="#64748b" stroke-width="2"/>
+<text x="845" y="522" fill="#f8fafc" font-size="15" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle" xml:space="preserve">This never runs</text>
+<text x="845" y="540" fill="#e2e8f0" font-size="11.5" font-family="ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" text-anchor="middle" xml:space="preserve">Everything after # is ignored by Python</text>
+<text x="845" y="566" fill="#94a3b8" font-size="13" font-family="ui-monospace, Consolas, 'SF Mono', Menlo, 'DejaVu Sans Mono', 'Courier New', monospace" text-anchor="middle" xml:space="preserve"># print("Budget Tracker")</text>
+</svg>

@@ -10,9 +10,10 @@ class Transaction:
     def is_expense(self):
         return self.amount < 0
 
-    def display(self, index):
+    def display(self, index=None):
         sign = "+" if self.amount >= 0 else ""
-        print(f"  {index}. [{self.category}] {self.description}: {sign}${self.amount:.2f}")
+        prefix = f"{index}. " if index is not None else ""
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${self.amount:.2f}")
 
     def to_dict(self):
         return {
@@ -23,7 +24,11 @@ class Transaction:
 
     @classmethod
     def from_dict(cls, data):
-        return cls(data["description"], data["amount"], data["category"])
+        return cls(
+            data["description"],
+            data["amount"],
+            data.get("category", "Uncategorized"),
+        )
 
 
 class BudgetTracker:
@@ -104,6 +109,10 @@ class BudgetTracker:
             print(f"  Welcome back, {self.owner}! Loaded {len(self.transactions)} transactions.")
         except FileNotFoundError:
             print("  No saved data found. Starting fresh!")
+        except json.JSONDecodeError:
+            print(f"  {filename} is not valid JSON. Starting fresh!")
+        except (KeyError, TypeError):
+            print(f"  {filename} is missing expected fields. Starting fresh!")
 
 
 def get_valid_amount(prompt):
@@ -119,13 +128,13 @@ def get_valid_amount(prompt):
 
 
 def get_non_empty_text(prompt, default_value=None):
-    text = input(prompt).strip()
-    if text:
-        return text
-    if default_value is not None:
-        return default_value
-    print("  Input cannot be empty.")
-    return get_non_empty_text(prompt, default_value)
+    while True:
+        text = input(prompt).strip()
+        if text:
+            return text
+        if default_value is not None:
+            return default_value
+        print("  Input cannot be empty.")
 
 
 def main():

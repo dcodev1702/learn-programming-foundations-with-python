@@ -8,6 +8,10 @@
 
 Once you've completed the 3-month plan, try these challenges to keep growing:
 
+![Three tiers of next steps: sharpening what you know, one new idea each, and going beyond the course with charts, tests, and a second project](../diagrams/bonus-where-to-go-next.svg)
+
+*Work left to right. The first column reuses only what you already know; the last column is where you start learning outside this repo.*
+
 1. **Set Monthly Budgets** — Let users set a spending limit per category and warn them when they're close to or over budget.
 2. **Date Tracking** — Add dates to transactions using Python's `datetime` module. Show monthly breakdowns.
 3. **Search & Filter** — Add the ability to search transactions by keyword or filter by category.

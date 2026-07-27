@@ -40,6 +40,33 @@ categories = {
 
 Now you can ask for `categories["Food"]` directly. That is more expressive than remembering that food is stored at position `0` in a list.
 
+![A list addressed by position compared with a dictionary addressed by key, plus the difference between direct indexing, .get() with a default, and the running-total idiom](../diagrams/week-07-dict-lookup-vs-list-index.svg)
+
+*With a list, the meaning lives in your head. With a dictionary, the meaning lives in the data.*
+
+## Adding to a Running Total
+
+Keeping a total per category has an awkward first step: the very first time you see `"Food"`, there is nothing to add to yet.
+
+The obvious version spells that out:
+
+```python
+if category in categories:
+    categories[category] = categories[category] + amount
+else:
+    categories[category] = amount
+```
+
+`.get()` collapses both branches into one line by supplying a fallback value when the key is missing:
+
+```python
+categories[category] = categories.get(category, 0) + amount
+```
+
+Read it as: "take the current total, or `0` if there isn't one yet, add the amount, and store it back."
+
+Both are correct. The second is the version you will see in real Python code, so it is the one this chapter uses.
+
 ## Sets in Plain English
 
 A set stores unique values only.
@@ -52,6 +79,10 @@ print(tags)
 The duplicate `"python"` is removed automatically.
 
 Sets are useful when you care about uniqueness, not order.
+
+![Five add() calls with two duplicates going into a set and three unique values coming out](../diagrams/week-07-set-uniqueness.svg)
+
+*Duplicates collapse on the way in. Nothing promises you an order on the way out — reach for a set when you care about "is it there?", not "which one is first?".*
 
 ## Examples
 
@@ -128,7 +159,7 @@ while True:
         case "2":
             desc = input("Description: ")
             amount = float(input("Amount: $"))
-            category = input("Category (e.g., Food, Transport, Bills): ").title()
+            category = input("Category (e.g., Food, Transport, Bills): ").strip().title() or "Uncategorized"
             balance -= amount
             transactions.append((desc, -amount, category))
             categories[category] = categories.get(category, 0) + amount
@@ -156,7 +187,7 @@ while True:
 ## What to Notice
 
 - `categories` is a dictionary because each total is attached to a category name.
-- The `if category in categories` check handles update vs. first-time creation.
+- `categories.get(category, 0)` returns the existing total, or `0` the first time a category is seen, so one line covers both cases.
 - Dictionaries make summaries much easier to build.
 - Sets are useful later when you want a unique list of category names.
 
@@ -166,6 +197,7 @@ while True:
 - Confusing a dictionary key with a list index.
 - Expecting sets to keep items in a reliable order.
 - Forgetting that dictionary keys should be meaningful and consistent.
+- Skipping `.strip()` on input, which turns `"Food"` and `"Food "` into two separate keys.
 
 ## Recap Questions
 
