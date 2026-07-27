@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_final.py](../budget_tracker_final.py) — this chapter's final assembly, complete, runnable, and commented line by line.
+
 ---
 
 ## Topics
@@ -131,9 +133,9 @@ class Transaction:
         return self.amount < 0
 
     def display(self, index=None):
-        sign = "+" if self.amount >= 0 else ""
+        sign = "+" if self.amount >= 0 else "-"
         prefix = f"{index}. " if index is not None else ""
-        print(f"  {prefix}[{self.category}] {self.description}: {sign}${self.amount:.2f}")
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${abs(self.amount):.2f}")
 
     def to_dict(self):
         return {
@@ -211,11 +213,11 @@ class BudgetTracker:
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
-            self.owner = data["owner"]
-            self.transactions = [
-                Transaction.from_dict(t)
-                for t in data["transactions"]
-            ]
+            # Build locals first, commit to self only once nothing can fail.
+            owner = data["owner"]
+            loaded = [Transaction.from_dict(t) for t in data["transactions"]]
+            self.owner = owner
+            self.transactions = loaded
             print(f"  Welcome back, {self.owner}! Loaded {len(self.transactions)} transactions.")
         except FileNotFoundError:
             print("  No saved data found. Starting fresh!")
@@ -230,12 +232,40 @@ def get_valid_amount(prompt):
     while True:
         try:
             amount = float(input(prompt))
-            if amount <= 0:
-                print("  Please enter a positive number.")
-                continue
-            return amount
         except ValueError:
             print("  Invalid input. Please enter a number.")
+            continue
+
+        # `not amount > 0` rather than `amount <= 0`: a user can type `nan`, and
+        # every comparison against nan is False, so `amount <= 0` would let it
+        # through and quietly poison every total.
+        if not amount > 0:
+            print("  Please enter a positive number.")
+            continue
+
+        # `inf` really is greater than 0, so it needs its own check.
+        if amount == float("inf"):
+            print("  Please enter a realistic amount.")
+            continue
+
+        return amount
+
+
+def get_non_empty_text(prompt, default_value=None):
+    """Ask for text, either re-asking until it is non-empty or using a default.
+
+    With no default, keep asking. With a default, Enter accepts the default.
+    Note this is a loop, not a function that calls itself — "repeat until valid"
+    is a loop's job, and recursion here would raise RecursionError if somebody
+    leaned on the Enter key.
+    """
+    while True:
+        text = input(prompt).strip()
+        if text:
+            return text
+        if default_value is not None:
+            return default_value
+        print("  Input cannot be empty.")
 
 
 def main():
@@ -244,7 +274,7 @@ def main():
     print("   Built with Python 3.13")
     print("=" * 44)
 
-    name = input("\nEnter your name: ").strip() or "User"
+    name = get_non_empty_text("\nEnter your name: ", "User")
     tracker = BudgetTracker(name)
     tracker.load()
 
@@ -262,15 +292,17 @@ def main():
 
         match choice:
             case "1":
-                desc = input("  Description: ").strip()
+                desc = get_non_empty_text("  Description: ")
                 amount = get_valid_amount("  Amount: $")
                 tracker.add_income(desc, amount)
 
             case "2":
-                desc = input("  Description: ").strip()
+                desc = get_non_empty_text("  Description: ")
                 amount = get_valid_amount("  Amount: $")
-                category = input("  Category (e.g., Food, Transport, Bills): ").strip().title()
-                tracker.add_expense(desc, amount, category or "Uncategorized")
+                category = get_non_empty_text(
+                    "  Category (e.g., Food, Transport, Bills): ", "Uncategorized"
+                ).title()
+                tracker.add_expense(desc, amount, category)
 
             case "3":
                 tracker.show_history()
@@ -285,7 +317,7 @@ def main():
                 tracker.save()
 
             case "7":
-                save_first = input("  Save before quitting? (y/n): ").lower()
+                save_first = input("  Save before quitting? (y/n): ").strip().lower()
                 if save_first == "y":
                     tracker.save()
                 print(f"\n  Goodbye, {tracker.owner}! Happy budgeting!")
@@ -325,6 +357,13 @@ Without the guard, the last line would just be `main()` — and then the entire 
 You do not need it for a script you only ever run. You do need it the moment a file might be imported, which is why every reference implementation in this repo has it.
 
 Remember the two underscores on each side: `__name__`, not `_name_`.
+
+## About the Reference File
+
+[budget_tracker_final.py](../budget_tracker_final.py) is the listing above, line
+for line, with a full commentary added and the `__str__` methods from Week 10
+included. There are no behavioural differences between the two — every method,
+message, and money format is identical.
 
 ## Try It Yourself
 

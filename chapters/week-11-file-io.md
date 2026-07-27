@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_final.py](../budget_tracker_final.py) — the finished app, which contains the `save()` and `load()` methods built here.
+
 ---
 
 ## Topics
@@ -206,11 +208,13 @@ class BudgetTracker:
         try:
             with open(filename, "r") as f:
                 data = json.load(f)
-            self.owner = data["owner"]
-            self.transactions = [
-                Transaction.from_dict(item)
-                for item in data["transactions"]
-            ]
+            # Build local variables first, and only commit them to self once
+            # nothing else can fail. A file that goes bad halfway through then
+            # leaves the tracker untouched instead of half-loaded.
+            owner = data["owner"]
+            loaded = [Transaction.from_dict(item) for item in data["transactions"]]
+            self.owner = owner
+            self.transactions = loaded
             print(f"Loaded {len(self.transactions)} transactions.")
         except FileNotFoundError:
             print("No saved data found. Starting fresh!")

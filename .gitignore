@@ -1,3 +1,15 @@
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Files the reference implementations and the Week 11 examples create when you run them
+budget_data.json
+notes.txt
+data.json
+transactions.json
+
+# Virtual environments and editor folders
+.venv/
+venv/
+.idea/
+.vscode/

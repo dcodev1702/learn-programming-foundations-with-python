@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_week10.py](../budget_tracker_week10.py) — this chapter's project step, complete, runnable, and commented line by line.
+
 ---
 
 ## Topics
@@ -45,6 +47,46 @@ class User:
 ```
 
 Now `print(user)` can show something meaningful.
+
+Without `__str__`, printing an object gives you Python's fallback — accurate, but
+useless to a human:
+
+```text
+<__main__.User object at 0x000001C4B2E3F5D0>
+```
+
+### `__str__` vs. a `display()` Method
+
+Your `Transaction` class already has a `display()` method, so why add `__str__` as
+well? Because they do different things, and the difference is Week 8's
+`print` vs. `return` all over again:
+
+```python
+class Transaction:
+    def display(self, index=None):
+        """PRINTS a line. Returns nothing."""
+        sign = "+" if self.amount >= 0 else "-"
+        prefix = f"{index}. " if index is not None else ""
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${abs(self.amount):.2f}")
+
+    def __str__(self):
+        """RETURNS text. Prints nothing."""
+        sign = "+" if self.amount >= 0 else "-"
+        return f"[{self.category}] {self.description}: {sign}${abs(self.amount):.2f}"
+```
+
+`display()` decides for you that the text goes to the screen. `__str__` hands the
+text back and lets the caller decide — print it, put it in an f-string, write it
+to a file, or join a hundred of them together:
+
+```python
+print(transaction)                     # uses __str__
+label = f"Latest: {transaction}"       # uses __str__
+lines = "\n".join(str(t) for t in transactions)
+```
+
+Returning is the more flexible of the two. That is why `__str__` is worth adding
+even when `display()` already exists.
 
 ## Lists of Objects
 
@@ -127,6 +169,7 @@ class BudgetTracker:
         if not self.transactions:
             print("No transactions yet.")
             return
+        print(f"\n--- History for {self.owner} ---")
         for i, transaction in enumerate(self.transactions, start=1):
             transaction.display(i)
 
@@ -144,6 +187,9 @@ class BudgetTracker:
             if t.is_expense():
                 cat = t.category
                 categories[cat] = categories.get(cat, 0) + abs(t.amount)
+        if not categories:
+            print("No expense categories yet.")
+            return
         print("\n--- Spending by Category ---")
         for cat, total in sorted(categories.items()):
             print(f"  {cat}: ${total:.2f}")
@@ -157,6 +203,17 @@ tracker.add_expense("Groceries", 52.30, "Food")
 tracker.show_history()
 tracker.show_summary()
 ```
+
+## About the Reference File
+
+[budget_tracker_week10.py](../budget_tracker_week10.py) is this same program,
+finished and heavily commented. The two classes match the listing above line for
+line. The reference adds only what is needed to make the milestone runnable:
+
+- `get_valid_amount()`, carried over from Week 8.
+- A `main()` function with the interactive menu, plus the
+  `if __name__ == "__main__":` guard explained in Week 12.
+- A `__str__` on `Transaction` as well as on `BudgetTracker`, as described above.
 
 ## Try It Yourself
 

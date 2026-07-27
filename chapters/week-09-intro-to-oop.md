@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_week10.py](../budget_tracker_week10.py) — the Week 10 milestone, which contains the `Transaction` class built here.
+
 ---
 
 ## Topics
@@ -123,9 +125,9 @@ class Transaction:
         return self.amount < 0
 
     def display(self, index=None):
-        sign = "+" if self.amount >= 0 else ""
+        sign = "+" if self.amount >= 0 else "-"
         prefix = f"{index}. " if index is not None else ""
-        print(f"  {prefix}[{self.category}] {self.description}: {sign}${self.amount:.2f}")
+        print(f"  {prefix}[{self.category}] {self.description}: {sign}${abs(self.amount):.2f}")
 
 def add_income(transactions):
     desc = input("Description: ")

@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_week8.py](../budget_tracker_week8.py) — the Week 8 milestone this chapter builds toward.
+
 ---
 
 ## Topics
@@ -153,7 +155,7 @@ while True:
             else:
                 print("\n--- Transaction History ---")
                 for i, (desc, amt, category) in enumerate(transactions, start=1):
-                    sign = "+" if amt > 0 else "-"
+                    sign = "+" if amt >= 0 else "-"
                     print(f"  {i}. [{category}] {desc}: {sign}${abs(amt):.2f}")
         case "5":
             break

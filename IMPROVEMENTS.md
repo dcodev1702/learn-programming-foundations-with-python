@@ -17,7 +17,9 @@ missing examples, and enhancements.
   `python .tooling/generate_diagrams.py`.
 - **All eight P1 corrections — done.** See the individual entries below; each carries a
   `RESOLVED` note describing what changed.
-- **P2 and P3 — open.** Suggested order of work is at the bottom of this file.
+- **Reference implementations — done.** All three are now heavily commented, tied to their
+  chapters, and verified to behave identically to the chapter listings. Closes P2-3 and P2-8.
+- **Remaining P2 and P3 — open.** Suggested order of work is at the bottom of this file.
 
 ---
 
@@ -135,23 +137,42 @@ quietly replaces this with `get_balance(transactions)` and never says why.
 deliberately and add a "What to Notice" bullet flagging the hazard, so that Week 8's refactor lands
 as the payoff instead of an unexplained change.
 
-### P2-3 · Negative-amount formatting regresses in Week 7
+### P2-3 · Negative-amount formatting regresses in Week 7 *(resolved)*
 
-Week 6 prints transactions as `{sign}${abs(amt):.2f}` (`week-06-...:169`). Week 7 prints
-`${amt:.2f}` (`week-07-...:150`), producing `$-45.00`. Week 8 changes it again. Three consecutive
-weeks, three different formats for the same line of output.
+Week 6 printed transactions as `{sign}${abs(amt):.2f}`. Week 7 printed `${amt:.2f}`, producing
+`$-45.00`. Week 8 changed it again, and all three reference files rendered expenses as
+`$-52.30` with the minus stranded inside the number.
 
-**Fix:** standardise on one display format from Week 6 and keep it.
+> **RESOLVED.** One money format now runs from Week 6 to Week 12, in the chapters and in all
+> three reference files:
+>
+> ```python
+> sign = "+" if amount >= 0 else "-"
+> print(f"  {index}. [{category}] {description}: {sign}${abs(amount):.2f}")
+> ```
+>
+> Section headings were normalised at the same time ("Spending by Category", "Summary for
+> Alex"), since Weeks 8 and 10 had drifted to title case.
 
-### P2-4 · No tests anywhere
+### P2-4 · No tests anywhere *(resolved)*
 
-There is no way to verify that a change to the three reference implementations still works. The
-logic is easy to test — `get_balance`, `spending_by_category`, `to_dict`/`from_dict` round-trip —
-and doing so would model a habit worth teaching.
+There was no way to verify that a change to the three reference implementations still worked.
 
-**Fix:** add `tests/test_budget_tracker.py` using `pytest` or plain `unittest`, covering the pure
-functions and the save/load round trip via `tmp_path`. Keep it small and readable; it becomes a
-bonus lesson in itself.
+> **RESOLVED.** [`tests/test_budget_tracker.py`](tests/test_budget_tracker.py) covers the pure
+> logic (balances, category totals, display formatting, validation), the save/load round trip via
+> `tmp_path`-style temporary folders, and every documented failure mode of `load()`.
+>
+> It also does something more valuable: it extracts the ```python listings out of the chapters,
+> executes them, and asserts that they produce byte-identical output to the reference files. That
+> is what stops the guide and the code drifting apart again — the failure mode this repository has
+> been most prone to. A final group of tests asserts that every chapter links to its reference
+> file and that every function and method in all three references has a docstring.
+>
+> Standard library only, so there is nothing to install:
+>
+> ```bash
+> python -m unittest discover tests -v
+> ```
 
 ### P2-5 · Reference apps cannot be smoke-tested
 
@@ -179,15 +200,44 @@ that runs `ruff check` and the tests on push. Keep it to ~25 lines so it stays a
 **Still open:** positional vs. keyword arguments, and linking the glossary from each chapter on
 first use of a term (see P3-6).
 
-### P2-8 · Instructor guide has gaps
+### P2-8 · Instructor guide has gaps *(resolved)*
 
-`instructor_guide.md` has no answers for the bonus chapter's reflection questions, no note about
-common misconceptions per week, and does not flag that the Week 12 chapter code and
-`budget_tracker_final.py` have drifted apart (the reference adds `get_non_empty_text`, changes the
-over-budget warning text, and reformats several lines).
+`instructor_guide.md` had no answers for the bonus chapter's reflection questions, no note about
+common misconceptions per week, and did not flag that the Week 12 chapter code and
+`budget_tracker_final.py` had drifted apart.
 
-**Fix:** add a bonus-chapter section, a short "what students usually get wrong" note per week, and a
-line explaining the intentional differences between the chapter listing and the reference file.
+> **RESOLVED.** The guide now carries a "What Students Usually Get Wrong" section for all twelve
+> weeks, a full bonus-chapter section (Try It Yourself, Reflection Questions, and a table of what
+> to watch for in each of the six bonus challenges), a "Reference Implementations" table, a
+> "Chapter Listings vs. Reference Files" section itemising every remaining intentional
+> difference, and short notes on the single money format and the sign convention.
+>
+> The Week 12 drift itself is gone rather than merely documented: `get_non_empty_text()` and the
+> hardened `get_valid_amount()` were added to the chapter listing, and the over-budget message was
+> aligned, so the chapter and the reference are now behaviourally identical.
+
+### P2-12 · Reference implementations carried no comments *(resolved)*
+
+All three reference files were completely uncommented and had no docstrings — in a repository
+whose entire purpose is to be read by beginners, and in a course whose Week 8 Topics list
+advertises docstrings.
+
+> **RESOLVED.** All three files now carry a module docstring (what the file is, what changed since
+> the previous milestone, which chapters it comes from, how to run it), a docstring on every
+> function and method, and inline commentary using a fixed symbol set — 📌 what a block is,
+> 🧠 the idea worth understanding, ⚠️ the trap beginners hit, 🔁 loop mechanics, 🧮 signs and
+> arithmetic, 🧱 OOP mechanics, 💾 saving and loading. Each chapter from Week 6 onward now links
+> to its reference file in the header, and Weeks 8, 10, and 12 have an "About the Reference File"
+> section.
+>
+> Four soundness bugs were fixed in the same pass:
+>
+> | Bug | Fix |
+> |---|---|
+> | `get_valid_amount()` accepted `nan` (`nan <= 0` is `False`), silently poisoning every total | guard rewritten as `not amount > 0` |
+> | `get_valid_amount()` accepted `inf`, making every total infinite | explicit `amount == float("inf")` check |
+> | `load()` assigned `self.owner` before parsing the transactions, so a malformed file left the tracker half-loaded | build locals first, commit to `self` only once nothing can fail |
+> | Expenses rendered as `$-52.30` (see P2-3) | one money format across all twelve weeks |
 
 ### P2-9 · No lesson on reading a traceback
 
@@ -206,13 +256,12 @@ repo explains `pip`, `venv`, or why you would isolate dependencies.
 **Fix:** add a short "Installing a Package" note to the bonus chapter with `python -m venv .venv`,
 activation on Windows and macOS/Linux, and `pip install matplotlib`.
 
-### P2-11 · `.gitignore` does not ignore files the course creates
+### P2-11 · `.gitignore` does not ignore files the course creates *(resolved)*
 
 Running the app creates `budget_data.json`. Week 11's examples create `notes.txt`, `data.json`, and
-`transactions.json`. A learner following along will see all of them in `git status`.
+`transactions.json`. A learner following along would see all of them in `git status`.
 
-**Fix:** add `budget_data.json`, `notes.txt`, `data.json`, `transactions.json`, `.venv/`, `venv/`,
-`.idea/`, and `.vscode/` to `.gitignore`.
+> **RESOLVED.** All four are ignored, along with `.venv/`, `venv/`, `.idea/`, and `.vscode/`.
 
 ---
 

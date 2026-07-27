@@ -27,9 +27,13 @@ Throughout this plan, you'll progressively build a **Personal Budget Tracker** �
 - [Python Beginner Glossary](python_beginner_glossary.md)
 - [Instructor Guide](instructor_guide.md)
 - [Course Overview](README.md)
-- [Week 8 Reference Implementation](budget_tracker_week8.py)
-- [Week 10 Reference Implementation](budget_tracker_week10.py)
-- [Final Reference Implementation](budget_tracker_final.py)
+- [Week 8 Reference Implementation](budget_tracker_week8.py) — functions, tuples, dictionaries
+- [Week 10 Reference Implementation](budget_tracker_week10.py) — classes and encapsulation
+- [Final Reference Implementation](budget_tracker_final.py) — the finished app with save/load
+- [Tests](tests/test_budget_tracker.py) — run with `python -m unittest discover tests`
+
+Each reference file is heavily commented and names the chapters it comes from in its opening
+docstring. Read one only after you have attempted that week's project step yourself.
 
 ---
 

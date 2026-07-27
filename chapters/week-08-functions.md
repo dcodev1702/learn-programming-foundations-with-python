@@ -2,6 +2,8 @@
 
 [Back to Learning Plan](../python_learning_plan.md)
 
+[Reference implementation: budget_tracker_week8.py](../budget_tracker_week8.py) — this chapter's project step, complete, runnable, and commented line by line.
+
 ---
 
 ## Topics
@@ -223,15 +225,17 @@ def show_history(transactions):
     if not transactions:
         print("No transactions yet.")
         return
+    print("\n--- Transaction History ---")
     for i, (desc, amt, cat) in enumerate(transactions, 1):
-        sign = "+" if amt > 0 else ""
-        print(f"  {i}. [{cat}] {desc}: {sign}${amt:.2f}")
+        sign = "+" if amt >= 0 else "-"
+        print(f"  {i}. [{cat}] {desc}: {sign}${abs(amt):.2f}")
 
 def show_category_totals(categories):
     """Display category totals."""
     if not categories:
-        print("No category data yet.")
+        print("No spending categories yet.")
         return
+    print("\n--- Spending by Category ---")
     for category, total in sorted(categories.items()):
         print(f"  {category}: ${total:.2f}")
 
@@ -258,6 +262,22 @@ while True:
         case _:
             print("Invalid choice.")
 ```
+
+## About the Reference File
+
+[budget_tracker_week8.py](../budget_tracker_week8.py) is this same program, finished
+and heavily commented. It is identical to the listing above apart from three
+additions, all of which are exercises below or earlier habits carried forward:
+
+- `get_valid_amount()` — exercise 3 on this page, used in place of the bare
+  `float(input(...))` calls.
+- `.strip() or "Income"` fallbacks on the description prompts, so pressing Enter
+  does not leave a blank description.
+- A `main()` function and the `if __name__ == "__main__":` guard, both explained
+  in Week 12.
+
+Everything else — the function names, the parameters, the output format — matches
+line for line. Read it after you have written your own version, not before.
 
 ## Try It Yourself
 
